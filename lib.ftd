@@ -1,0 +1,74 @@
+-- component loginpg:
+caption heading:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+ftd.color-scheme color-scheme: $winter-cs.main
+
+
+-- ftd.column:
+border-width.px: 5
+width.fixed.percent: 27
+padding.px: 32  
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 1
+border-color: black
+
+-- ftd.text: $loginpg.heading
+margin-bottom.px: 4
+;;role: $inherited.types.heading-tiny
+color: 
+
+-- ftd.text: UserName
+color: black
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 16
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+;;role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+
+-- ftd.text: Password
+;;role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 20
+width: fill-container
+border-radius.px: 1
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+;;role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+
+-- ftd.text: $loginpg.cta-button-1
+;;role: $inherited.types.label-large
+text-align: center
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {contact-1.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
+color: $inherited.colors.border
+link: $loginpg.link-1
+
+-- end: ftd.column
+
+
+-- end: loginpg
