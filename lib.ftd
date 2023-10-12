@@ -1,16 +1,22 @@
+-- boolean $show: false
+
 -- component loginpg:
 caption heading:
 string cta-button-1:
-string link-1:
+;;string link-1:
 boolean $is-active-1: false
-ftd.color-scheme color-scheme: $winter-cs.main
+
+
+-- ftd.column:
+colors: $winter-cs.main
+width: fill-container
 
 
 -- ftd.column:
 border-width.px: 5
 width.fixed.percent: 27
 padding.px: 32  
-background.solid: $inherited.colors.background.step-2
+background.solid: $inherited.colors.background.code
 border-radius.px: 1
 border-color: black
 
@@ -28,17 +34,17 @@ padding-vertical.px: 4
 padding-horizontal.px: 8
 margin-bottom.px: 16
 width: fill-container
-border-radius.px: 5
+border-radius.px: 1
 border-width.px: 1
 border-color: $inherited.colors.border
 type: text
 ;;role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.base
-color: $inherited.colors.border
+background.solid: white
+color: black
 
 -- ftd.text: Password
 ;;role: $inherited.types.copy-small
-color: $inherited.colors.border
+color: black
 margin-bottom.px: 4
 
 -- ftd.text-input:
@@ -51,24 +57,73 @@ border-width.px: 1
 border-color: $inherited.colors.border
 type: text
 ;;role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.base
-color: $inherited.colors.border
+background.solid: white
+color: black
 
 -- ftd.text: $loginpg.cta-button-1
 ;;role: $inherited.types.label-large
 text-align: center
-width: fill-container
+width.fixed.percent: 30
 padding-vertical.px: 8
 padding-horizontal.px: 24
+align-self: center
 border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {loginpg.is-active-1}: $inherited.colors.info.text
+background.solid: $inherited.colors.info.text
+background.solid if {loginpg.is-active-1}: $inherited.colors.custom.one
 $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
-color: $inherited.colors.border
-link: $loginpg.link-1
+color: black
+$on-click$: $ftd.set-bool($a = $show, v = true)
+;;link: $loginpg.link-1
+
+-- end: ftd.column
 
 -- end: ftd.column
 
 
 -- end: loginpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component alert:
+string text-1:
+
+-- ftd.row:
+if: {show}
+width.fixed.percent: 20
+;;height.fixed.px: 20
+border-radius.px: 1
+border-width.px: 3
+border-color: black
+padding.px: 20
+margin.px: 20
+background.solid: skyblue
+align-content: center
+height: auto
+
+
+-- ftd.text: $alert.text-1
+margin-horizontal.px: 15
+color: black
+align-self: center
+text-align: center
+width: fill-container
+;;role:
+
+
+
+-- end: ftd.row
+
+-- end: alert
