@@ -1,4 +1,4 @@
--- boolean $show: false
+;;-- boolean $show: false
 
 -- component loginpg:
 caption heading:
@@ -47,6 +47,7 @@ color: black
 color: black
 margin-bottom.px: 4
 
+
 -- ftd.text-input:
 padding-vertical.px: 4
 padding-horizontal.px: 8
@@ -55,10 +56,10 @@ width: fill-container
 border-radius.px: 1
 border-width.px: 1
 border-color: $inherited.colors.border
-type: text
 ;;role: $inherited.types.copy-small
 background.solid: white
 color: black
+type: password
 
 -- ftd.text: $loginpg.cta-button-1
 ;;role: $inherited.types.label-large
@@ -73,7 +74,7 @@ background.solid if {loginpg.is-active-1}: $inherited.colors.custom.one
 $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
 color: black
-$on-click$: $ftd.set-bool($a = $show, v = true)
+;;$on-click$: $ftd.set-bool($a = $show, v = true)
 link: $loginpg.link-1
 
 -- end: ftd.column
@@ -101,7 +102,7 @@ link: $loginpg.link-1
 string text-1:
 
 -- ftd.row:
-if: {show}
+;;if: {show}
 width.fixed.percent: 20
 ;;height.fixed.px: 20
 border-radius.px: 1
