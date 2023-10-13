@@ -3,7 +3,7 @@
 -- component loginpg:
 caption heading:
 string cta-button-1:
-;;string link-1:
+string link-1:
 boolean $is-active-1: false
 
 
@@ -74,7 +74,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
 color: black
 $on-click$: $ftd.set-bool($a = $show, v = true)
-;;link: $loginpg.link-1
+link: $loginpg.link-1
 
 -- end: ftd.column
 
@@ -153,17 +153,15 @@ string cta-link-3:
 
 -- ftd.row:
 width: fill-container
-sticky: true
+
 
 -- ftd.row:
 width: fill-container
 height: hug-content
 padding-horizontal.px: 50
-margin-vertical.px: 20
-margin-horizontal.px: 20
 align-self: center
 spacing: space-between
-border-radius.px: 10
+border-radius.px: 1
 background.solid: $inherited.colors.background.code
 
 -- ftd.image:
@@ -185,15 +183,13 @@ height: fill-container
 align-content: right
 
 -- ftd.text: $header.cta-text-1
-;;role: 
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.scrim
 link: $header.cta-link-1
 
--- ftd.text: $header.cta-text-2
-;;role: 
+-- ftd.text: $header.cta-text-2 
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
@@ -201,7 +197,6 @@ color: $inherited.colors.scrim
 link: $header.cta-link-2
 
 -- ftd.text: $header.cta-text-3
-;;role: 
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
@@ -244,11 +239,11 @@ width: fill-container
 width: fill-container
 height: hug-content
 padding-horizontal.px: 50
-margin-vertical.px: 20
-margin-horizontal.px: 20
+;;margin-vertical.px: 20
+;;margin-horizontal.px: 20
 align-self: center
 spacing: space-between
-border-radius.px: 10
+border-radius.px: 1
 background.solid: $inherited.colors.background.code
 
 -- ftd.image:

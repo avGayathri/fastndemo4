@@ -1,10 +1,13 @@
 
+
 -- lib.loginpg: LOGIN
 cta-button-1: Submit
-;;link-1: https://fastnui.trizwit.com/
+link-1: https://fastnui.trizwit.com/
 
 
 -- lib.alert:
 text-1: wrong password 
+
+
 
 

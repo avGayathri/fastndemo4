@@ -6,7 +6,7 @@ logo: $assets.files.assets.logo1.jpg
 logo-name: VSG
 cta-text-1: Home
 cta-text-2: About
-cta-text-3: Projectss
+cta-text-3: Projects
 cta-link-1: https://fastnui.trizwit.com/
 cta-link-2: https://fastnui.trizwit.com/
 cta-link-3: https://fastnui.trizwit.com/
@@ -22,7 +22,7 @@ Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-p
 Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
 
 -- lib.footer:
-logo: $assets.files.assets.logo1.jpgassets\logo1.jpg
+logo: $assets.files.assets.logo1.jpg
 copyright: Copyright © 2023 - VSG
 github: $assets.files.assets.github.png
 linkedin: $assets.files.assets.linkedin.png
