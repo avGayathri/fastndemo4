@@ -1,0 +1,964 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<base href="/fastndemo4/">
+<meta content="fastn" name="generator">
+
+<link rel="shortcut icon" href="/-/avgayathri.github.io/fastndemo4/favicon.ico" type="image/x-icon">
+
+<script>
+let __fastn_package_name__ = "avgayathri.github.io/fastndemo4";
+
+</script>
+
+
+<script src="markdown-BAEDD5DFCDD5DBEC8FC55F8804199879E276781A8879AD94F0C7DDA0F7069C74.js"></script>
+<script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
+<script src="default-F271D776DFC69EF3727F05C5D716F78F3AF5AD2B468C88231DF6F029A7F35A23.js"></script>
+<link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
+
+
+
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+!* HTML5 display-role reset for older browsers *!
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}*/
+
+*, :after, :before {
+/*box-sizing: inherit;*/
+box-sizing: border-box;
+text-decoration: none;
+box-sizing: border-box;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-style: solid;
+height: auto;
+width: auto;
+}
+
+*, pre, div {
+padding: 0;
+margin: 0;
+gap: 0;
+outline: none;
+}
+
+
+body, ol ol, ol ul, ul ol, ul ul {
+margin:0
+}
+pre, table{
+overflow:auto
+}
+html {
+height: 100%;
+width: 100%;
+}
+
+body {
+height: 100%;
+width: 100%;
+}
+
+input {
+vertical-align: middle;
+}
+pre {
+white-space: break-spaces;
+word-wrap: break-word;
+}
+html {
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizelegibility;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+}
+iframe {
+border: 0;
+color-scheme: auto;
+}
+
+pre code {
+/*
+This break show-line-number in `ftd.code`
+overflow-x: auto;
+*/
+display: block;
+padding: 0 1em !important;
+}
+
+/* Common styles  */
+.ft_common{
+text-decoration: none;
+box-sizing: border-box;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-style: solid;
+height: auto;
+width: auto;
+}
+
+/* Common container attributes */
+.ft_row, .ft_column {
+display: flex;
+align-items: start;
+justify-content: start
+}
+
+.full {
+width: 100%;
+height: 100%;
+}
+
+.ft_row {
+display: flex;
+align-items: start;
+justify-content: start;
+flex-direction: row;
+box-sizing: border-box;
+}
+.ft_column {
+display: flex;
+align-items: start;
+justify-content: start;
+flex-direction: column;
+box-sizing: border-box;
+}
+
+.ft_row {
+flex-direction: row;
+}
+
+.ft_column {
+flex-direction: column;
+}
+
+.ft_md ul,
+.ft_md ol{
+margin: 10px 0;
+}
+
+.ft_md ul ul,
+.ft_md ul ol,
+.ft_md ol ul,
+.ft_md ol ol {
+margin: 0;
+}
+
+.ft_md ul li,
+.ft_md ol li,
+.ft_md ul ol li .ft_md ul ul li .ft_md ol ul li .ft_md ol ol li {
+position: relative;
+padding-left: 32px;
+margin: 4px 0;
+}
+
+.ft_md ul {
+list-style: none;
+padding-left: 0;
+}
+
+.ft_md ol {
+list-style: none;
+padding-left: 0;
+counter-reset: item;
+}
+
+.ft_md ol li:before,
+.ft_md ol ol li:before,
+.ft_md ul ol li:before {
+content: counter(item);
+counter-increment: item;
+font-size: 11px;
+line-height: 10px;
+text-align: center;
+padding: 4px 0;
+height: 10px;
+width: 18px;
+border-radius: 10px;
+position: absolute;
+left: 0;
+top: 5px;
+}
+
+.ft_md ul li::before,
+.ft_md ul ul li::before,
+.ft_md ol ul li::before {
+content: "";
+position: absolute;
+width: 6px;
+height: 6px;
+left: 8px;
+top: 10px;
+border-radius: 50%;
+background: #c1c8ce;
+}
+
+ul, ol {
+/* Added padding to the left to move the ol number/ ul bullet to the right */
+padding-left: 20px;
+}
+
+a {
+color: #2952a3;
+}
+
+a:visited {
+color: #856ab9;
+}
+
+a:hover {
+color: #24478f;
+}
+
+.ft_md a {
+text-decoration: none;
+}
+
+.ft_md a:visited {
+text-decoration: none;
+}
+
+.ft_md a:hover {
+text-decoration: none;
+}
+
+code {
+padding: 0.1rem 0.25rem;
+border-radius: 4px;
+background-color: #0000000d;
+}
+
+.ft_md blockquote {
+padding: 0.25rem 1rem;
+margin: 1rem 0;
+border-radius: 3px;
+}
+
+.ft_md blockquote > blockquote {
+margin: 0;
+}
+
+
+body.dark code {
+padding: 0.1rem 0.25rem;
+border-radius: 4px;
+background-color: #ffffff1f;
+}
+
+
+body.dark a {
+color: #6498ff
+}
+
+body.dark a:visited {
+color: #b793fb;
+}
+
+
+p {
+margin-block-end: 1em;
+}
+
+h1:only-child {
+margin-block-end: 0.67em
+}
+
+table, td, th {
+border: 1px solid;
+}
+
+th {
+padding: 6px;
+}
+
+td {
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 3px;
+padding-bottom: 3px;
+}
+
+</style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_row __w-3"><div data-id="4" class="ft_row __as-4 __w-5 __h-6 __pl-7 __pr-8 __br-9 __bgc-10 __jc-11"><img data-id="5" src="-/avgayathri.github.io/fastndemo4/assets/logo1.jpg" class="__w-12 __h-13 __mt-14 __mb-15 __br-16"></img><div data-id="6" class="__as-17 __ml-18 __mr-19 __c-20 __ta-21">VSG</div><div data-id="7" class="ft_row __w-22 __h-23 __jc-24 __ali-25"><a data-id="8" href="https://fastnui.trizwit.com/" class="__ml-26 __mr-27 __mt-28 __mb-29 __c-30 __ta-31">Home</a><a data-id="9" href="https://fastnui.trizwit.com/" class="__ml-32 __mr-33 __mt-34 __mb-35 __c-36 __ta-37">About</a><a data-id="10" href="https://fastnui.trizwit.com/" class="__ml-38 __mr-39 __mt-40 __mb-41 __c-42 __ta-43">Projects</a></div></div></div><div data-id="11" class="ft_column"><comment data-id="12"></comment><div data-id="13" class="ft_column __w-44 __h-45 __pl-46 __pr-47 __pt-48 __pb-49 __bgc-50 __jc-51 __ali-52"><img data-id="14" src="-/avgayathri.github.io/fastndemo4/assets/logo1.jpg" class="__w-53 __h-54"></img><div data-id="15" class="ft_column __as-55 __w-56 __mt-57 __jc-58 __ali-59"><div data-id="16" class="__mb-60 __c-61 __rl-62 __ta-63">Before they sold out readymade gluten</div><div data-id="17" class="__mb-64 __c-65 __rl-66 __ta-67">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag.
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</div><div data-id="18" class="ft_row"><a data-id="19" href="https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif" class="__pl-68 __pr-69 __pt-70 __pb-71 __br-72 __c-73 __bgc-74 __rl-75 __ta-76">Button</a><a data-id="20" href="https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif" class="__pl-77 __pr-78 __pt-79 __pb-80 __ml-81 __br-82 __c-83 __bgc-84 __rl-85 __ta-86">Button</a></div></div></div><comment data-id="21"></comment></div><div data-id="22" class="ft_row __w-87"><div data-id="23" class="ft_row __as-88 __w-89 __h-90 __pl-91 __pr-92 __br-93 __bgc-94 __jc-95"><img data-id="24" src="-/avgayathri.github.io/fastndemo4/assets/logo1.jpg" class="__w-96 __h-97 __mt-98 __mb-99 __br-100"></img><div data-id="25" class="__as-101 __w-102 __h-103 __ml-104 __mr-105 __c-106">Copyright © 2023 - VSG</div><div data-id="26" class="ft_row __as-107 __h-108 __jc-109 __ali-110"><img data-id="27" src="-/avgayathri.github.io/fastndemo4/assets/github.png" class="__w-111"></img><img data-id="28" src="-/avgayathri.github.io/fastndemo4/assets/linkedin.png" class="__w-112 __ml-113 __mt-114"></img></div></div></div></div></body><style id="styles">
+.__w-1 { width: 100%; }
+.__h-2 { height: 100%; }
+.__w-3 { width: 100%; }
+.__as-4 { align-self: center; }
+.__w-5 { width: 100%; }
+.__h-6 { height: fit-content; }
+.__pl-7 { padding-left: 50px; }
+.__pr-8 { padding-right: 50px; }
+.__br-9 { border-radius: 1px; }
+.__bgc-10 { background-color: #F5F5F5; }
+body.dark .__bgc-10 { background-color: #21222C; }
+.__jc-11 { justify-content: space-between; }
+.__w-12 { width: 95px; }
+.__h-13 { height: fit-content; }
+.__mt-14 { margin-top: 10px; }
+.__mb-15 { margin-bottom: 10px; }
+.__br-16 { border-radius: 20px; }
+.__as-17 { align-self: center; }
+.__ml-18 { margin-left: 10px; }
+.__mr-19 { margin-right: 10px; }
+.__c-20 { color: #007f9b !important; }
+.__ta-21 { text-align: center; }
+.__w-22 { width: 100%; }
+.__h-23 { height: 100%; }
+.__jc-24 { justify-content: right; }
+.__ali-25 { align-items: center; }
+.__ml-26 { margin-left: 32px; }
+.__mr-27 { margin-right: 32px; }
+.__mt-28 { margin-top: 28px; }
+.__mb-29 { margin-bottom: 28px; }
+.__c-30 { color: #007f9b !important; }
+.__ta-31 { text-align: center; }
+.__ml-32 { margin-left: 0px; }
+.__mr-33 { margin-right: 0px; }
+.__mt-34 { margin-top: 28px; }
+.__mb-35 { margin-bottom: 28px; }
+.__c-36 { color: #007f9b !important; }
+.__ta-37 { text-align: center; }
+.__ml-38 { margin-left: 32px; }
+.__mr-39 { margin-right: 32px; }
+.__mt-40 { margin-top: 28px; }
+.__mb-41 { margin-bottom: 28px; }
+.__c-42 { color: #007f9b !important; }
+.__ta-43 { text-align: center; }
+.__w-44 { width: 100%; }
+.__h-45 { height: fit-content; }
+.__pl-46 { padding-left: 100px; }
+.__pr-47 { padding-right: 100px; }
+.__pt-48 { padding-top: 96px; }
+.__pb-49 { padding-bottom: 96px; }
+.__bgc-50 { background-color: #4fb2df; }
+.__jc-51 { justify-content: center; }
+.__ali-52 { align-items: center; }
+.__w-53 { width: 45%; }
+.__h-54 { height: auto; }
+.__as-55 { align-self: center; }
+.__w-56 { width: 60%; }
+.__mt-57 { margin-top: 60px; }
+.__jc-58 { justify-content: center; }
+.__ali-59 { align-items: center; }
+.__mb-60 { margin-bottom: 16px; }
+.__c-61 { color: #434547 !important; }
+.__rl-62 {  font-family: sans-serif; font-size: 38px; font-weight: 400; line-height: 57px; }
+body.mobile .__rl-62 {  font-family: sans-serif; font-size: 26px; font-weight: 400; line-height: 40px; }
+.__ta-63 { text-align: center; }
+.__mb-64 { margin-bottom: 32px; }
+.__c-65 { color: #434547 !important; }
+.__rl-66 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+body.mobile .__rl-66 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+.__ta-67 { text-align: center; }
+.__pl-68 { padding-left: 24px; }
+.__pr-69 { padding-right: 24px; }
+.__pt-70 { padding-top: 8px; }
+.__pb-71 { padding-bottom: 8px; }
+.__br-72 { border-radius: 5px; }
+.__c-73 { color: #434547 !important; }
+.__bgc-74 { background-color: #e7e7e4; }
+body.dark .__bgc-74 { background-color: #18181b; }
+.__rl-75 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
+body.mobile .__rl-75 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
+.__ta-76 { text-align: center; }
+.__pl-77 { padding-left: 24px; }
+.__pr-78 { padding-right: 24px; }
+.__pt-79 { padding-top: 8px; }
+.__pb-80 { padding-bottom: 8px; }
+.__ml-81 { margin-left: 16px; }
+.__br-82 { border-radius: 5px; }
+.__c-83 { color: #434547 !important; }
+.__bgc-84 { background-color: #e7e7e4; }
+body.dark .__bgc-84 { background-color: #18181b; }
+.__rl-85 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
+body.mobile .__rl-85 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
+.__ta-86 { text-align: center; }
+.__w-87 { width: 100%; }
+.__as-88 { align-self: center; }
+.__w-89 { width: 100%; }
+.__h-90 { height: fit-content; }
+.__pl-91 { padding-left: 50px; }
+.__pr-92 { padding-right: 50px; }
+.__br-93 { border-radius: 1px; }
+.__bgc-94 { background-color: #F5F5F5; }
+body.dark .__bgc-94 { background-color: #21222C; }
+.__jc-95 { justify-content: space-between; }
+.__w-96 { width: 50px; }
+.__h-97 { height: fit-content; }
+.__mt-98 { margin-top: 10px; }
+.__mb-99 { margin-bottom: 10px; }
+.__br-100 { border-radius: 20px; }
+.__as-101 { align-self: center; }
+.__w-102 { width: 100%; }
+.__h-103 { height: 100%; }
+.__ml-104 { margin-left: 10px; }
+.__mr-105 { margin-right: 10px; }
+.__c-106 { color: #007f9b !important; }
+.__as-107 { align-self: center; }
+.__h-108 { height: 100%; }
+.__jc-109 { justify-content: right; }
+.__ali-110 { align-items: center; }
+.__w-111 { width: 30px; }
+.__w-112 { width: 30px; }
+.__ml-113 { margin-left: 12px; }
+.__mt-114 { margin-top: 3px; }
+</style>
+<script>
+(function() {
+let global = {
+};
+let main = function (parent) {
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "avgayathri_github_io_fastndemo4";
+try {
+let parenti0 = avgayathri_github_io_fastndemo4_lib__header(parent, inherited, {
+logo: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("logo1").get("jpg"),
+logo_name: "VSG",
+cta_text_1: "Home",
+cta_text_2: "About",
+cta_text_3: "Projects",
+cta_link_1: "https://fastnui.trizwit.com/",
+cta_link_2: "https://fastnui.trizwit.com/",
+cta_link_3: "https://fastnui.trizwit.com/"
+});
+let parenti1 = fastnui_trizwit_com_UI_Components_Hero_hero_2__hero_2(parent, inherited, {
+cover: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("logo1").get("jpg"),
+headline: "Before they sold out readymade gluten",
+content: "Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. \nHeirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.",
+cta_button_1: "Button",
+link_1: "https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif",
+cta_button_2: "Button",
+link_2: "https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif"
+});
+let parenti2 = avgayathri_github_io_fastndemo4_lib__footer(parent, inherited, {
+logo: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("logo1").get("jpg"),
+copyright: "Copyright © 2023 - VSG",
+github: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("github").get("png"),
+linkedin: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("linkedin").get("png"),
+github_link: "https://fastnui.trizwit.com/",
+linkedin_link: "https://fastnui.trizwit.com/"
+});
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["main"] = main;
+let avgayathri_github_io_fastndemo4_lib__header = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "avgayathri_github_io_fastndemo4";
+try {
+let __args__ = {
+};
+inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+__args__ = fastn_utils.getArgs(__args__, args);
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.HugContent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(50), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(1), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("code")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.SpaceBetween, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.logo, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(95)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.HugContent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(20), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.logo_name, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginHorizontal, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("scrim"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Right, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_text_1, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginHorizontal, fastn_dom.Length.Px(32), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginVertical, fastn_dom.Length.Px(28), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("scrim"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_link_1, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_text_2, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginHorizontal, fastn_dom.Length.Px(0), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginVertical, fastn_dom.Length.Px(28), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("scrim"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_link_2, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_text_3, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginHorizontal, fastn_dom.Length.Px(32), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginVertical, fastn_dom.Length.Px(28), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("scrim"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.cta_link_3, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+}
+]), inherited);
+}
+]), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["avgayathri_github_io_fastndemo4_lib__header"] = avgayathri_github_io_fastndemo4_lib__header;
+fastn_utils.createNestedObject(global, "avgayathri_github_io_fastndemo4_assets__files.assets.logo1.jpg", fastn.recordInstance({
+light: "-/avgayathri.github.io/fastndemo4/assets/logo1.jpg",
+dark: "-/avgayathri.github.io/fastndemo4/assets/logo1.jpg"
+}));
+let fastnui_trizwit_com_UI_Components_Hero_hero_2__hero_2 = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "avgayathri_github_io_fastndemo4";
+try {
+let __args__ = {
+is_active_1: fastn.mutable(false),
+is_active_2: fastn.mutable(false),
+};
+inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+__args__ = fastn_utils.getArgs(__args__, args);
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+ftd.device
+], function () {
+return (fastn_utils.getter(ftd.device) == "desktop");
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([ftd.device], function () {
+if (function () {
+return (fastn_utils.getter(ftd.device) == "mobile");
+}()) {
+return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(900));
+} else {
+return fastn_dom.Resizing.FillContainer;
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.HugContent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(100), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(96), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.cover, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(45)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Auto, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(60)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(60), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.headline, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(16), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_medium"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.content, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(32), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_button_1, inherited);
+rooti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.is_active_1,
+v: true,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.is_active_1,
+v: false,
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(24), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(8), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(5), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn.formula([__args__.is_active_1], function () {
+if (function () {
+return fastn_utils.getter(__args__.is_active_1);
+}()) {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("hover"));
+} else {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base"));
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("label_large"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link_1, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_button_2, inherited);
+rooti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.is_active_2,
+v: true,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.is_active_2,
+v: false,
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(24), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(8), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginLeft, fastn_dom.Length.Px(16), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(5), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn.formula([__args__.is_active_2], function () {
+if (function () {
+return fastn_utils.getter(__args__.is_active_2);
+}()) {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("hover"));
+} else {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base"));
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("label_large"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link_2, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+}
+]), inherited);
+}
+]), inherited);
+}
+]), inherited);
+return rooti0;
+});
+},
+function (root, inherited) {
+fastn_dom.conditionalDom(root, [
+ftd.device
+], function () {
+return (fastn_utils.getter(ftd.device) == "mobile");
+}, function (root) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.HugContent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(15), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(20), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_secondary").get("base")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.cover, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(100)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Auto, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginLeft, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Left, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.headline, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(16), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_medium"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.content, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(32), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_button_1, inherited);
+rooti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.is_active_1,
+v: true,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.is_active_1,
+v: false,
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(24), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(8), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(5), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn.formula([__args__.is_active_1], function () {
+if (function () {
+return fastn_utils.getter(__args__.is_active_1);
+}()) {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("hover"));
+} else {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base"));
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("label_large"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link_1, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.cta_button_2, inherited);
+rooti0.addEventHandler(fastn_dom.Event.MouseEnter, function () {
+ftd.set_bool({
+a: __args__.is_active_2,
+v: true,
+}, rooti0);
+});
+rooti0.addEventHandler(fastn_dom.Event.MouseLeave, function () {
+ftd.set_bool({
+a: __args__.is_active_2,
+v: false,
+}, rooti0);
+});
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(24), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(8), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginLeft, fastn_dom.Length.Px(16), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(5), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("border"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn.formula([__args__.is_active_2], function () {
+if (function () {
+return fastn_utils.getter(__args__.is_active_2);
+}()) {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("hover"));
+} else {
+return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base"));
+}
+}
+), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("label_large"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link_2, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+}
+]), inherited);
+}
+]), inherited);
+}
+]), inherited);
+return rooti0;
+});
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["fastnui_trizwit_com_UI_Components_Hero_hero_2__hero_2"] = fastnui_trizwit_com_UI_Components_Hero_hero_2__hero_2;
+let avgayathri_github_io_fastndemo4_lib__footer = function (parent, inherited, args)
+{
+let __fastn_super_package_name__ = __fastn_package_name__;
+__fastn_package_name__ = "avgayathri_github_io_fastndemo4";
+try {
+let __args__ = {
+};
+inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+__args__ = fastn_utils.getArgs(__args__, args);
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.HugContent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(50), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(1), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("code")), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.SpaceBetween, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.logo, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(50)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.HugContent, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginVertical, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(20), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.copyright, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginHorizontal, fastn_dom.Length.Px(10), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("scrim"), inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Right, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.github, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(30)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.github_link, inherited);
+},
+function (root, inherited) {
+let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.linkedin, inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(30)), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginLeft, fastn_dom.Length.Px(12), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(3), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.github_link, inherited);
+}
+]), inherited);
+}
+]), inherited);
+}
+]), inherited);
+return parenti0;
+} finally {
+__fastn_package_name__ = __fastn_super_package_name__;
+}
+}
+global["avgayathri_github_io_fastndemo4_lib__footer"] = avgayathri_github_io_fastndemo4_lib__footer;
+fastn_utils.createNestedObject(global, "avgayathri_github_io_fastndemo4_assets__files.assets.linkedin.png", fastn.recordInstance({
+light: "-/avgayathri.github.io/fastndemo4/assets/linkedin.png",
+dark: "-/avgayathri.github.io/fastndemo4/assets/linkedin.png"
+}));
+fastn_utils.createNestedObject(global, "avgayathri_github_io_fastndemo4_assets__files.assets.github.png", fastn.recordInstance({
+light: "-/avgayathri.github.io/fastndemo4/assets/github.png",
+dark: "-/avgayathri.github.io/fastndemo4/assets/github.png"
+}));
+fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
+fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
+fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";
+fastn_dom.codeData.availableThemes["dracula-theme"] = "code-theme-0CA636E4954E3FC6184FB8000174F8EAA6C61DB10F6A18D74740E6D2032C1A2E.css";
+fastn_dom.codeData.availableThemes["duotone-theme.dark"] = "code-theme-95B9118AFC8631777EEBBD89B2066C3706A6DF3579B14F41AF05564E41CAA09C.css";
+fastn_dom.codeData.availableThemes["duotone-theme.earth"] = "code-theme-6EB6F03F9F578742CA0CD1189693E43A6135D910989ADD88CA3C0D6117EE24D7.css";
+fastn_dom.codeData.availableThemes["duotone-theme.forest"] = "code-theme-256C21B515FC9E77F95D88689A4086B9D9406B7AAE3A273780FE8B8748C5A7D2.css";
+fastn_dom.codeData.availableThemes["duotone-theme.light"] = "code-theme-0800A18B1822D6AFDAF807CF840379A2DB3483A1F058CA29FBCFB3815CA76148.css";
+fastn_dom.codeData.availableThemes["duotone-theme.sea"] = "code-theme-9A45313F167DBD90654BFD5BB3BC0BDF6AE447485C30B0389ADA7B49C069E46A.css";
+fastn_dom.codeData.availableThemes["duotone-theme.space"] = "code-theme-4DD8479BE14A755645BC09FF433FB70EB4CB28F0CBF3CA98DCB71B244B85B194.css";
+fastn_dom.codeData.availableThemes["fastn-theme.dark"] = "code-theme-F614177D3155EA8E915B35A3445175DC7C96D02FBC621F8AFD0FCCC417ED8A43.css";
+fastn_dom.codeData.availableThemes["fastn-theme.light"] = "code-theme-B8645DE281A38A3068C56919DE1BB0511696A1EE8002C5088748DA0BAC0806E6.css";
+fastn_dom.codeData.availableThemes["fire.light"] = "code-theme-A352AF572179AB980583D41BC41ADDBA36C4C17757A34C1C6AAAF2C253E25CE3.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.dark"] = "code-theme-B68AA27E05B319F04A9CD747AADBF9B9CD791E040DEC519AE9544B4FF65DDBAC.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.light"] = "code-theme-06E6F84E43C61CB1653D9F4FACD46B7EBCB3CD8A48EFAEF2E5BE3E9E9212D1E6.css";
+fastn_dom.codeData.availableThemes["laserwave-theme"] = "code-theme-0F444C6433C356376F7E92122F6C521FE40242BEC9D9E050359EE1DF4A9D5E6D.css";
+fastn_dom.codeData.availableThemes["material-theme.dark"] = "code-theme-8CCA3D600F91FA55950DF3132F2ABE4BA14CEEA13CD23E157BF6A137762B8452.css";
+fastn_dom.codeData.availableThemes["material-theme.light"] = "code-theme-8C59190F5018F48CCBB063359072EE9053D04923BBC5D1BA52B574E78D8C536A.css";
+fastn_dom.codeData.availableThemes["nightowl-theme"] = "code-theme-88F91252A8A0EA125B4BA2C7B85E65580DB580F1477931AADCB5118E4E69D1CD.css";
+fastn_dom.codeData.availableThemes["one-theme.dark"] = "code-theme-A24DC8F09D03756A62923E8A883CAE3B938D54E2813F0855312D2554DBE97BAD.css";
+fastn_dom.codeData.availableThemes["one-theme.light"] = "code-theme-60E02531E77333F3F1B636C4FC43E976EA9F41AD75268B2DD825C33C68B573A6.css";
+fastn_dom.codeData.availableThemes["vs-theme.dark"] = "code-theme-DC76F700474E809F7BA2D9914793D04881B17EA4699BA9C568C83D32A18B0173.css";
+fastn_dom.codeData.availableThemes["vs-theme.light"] = "code-theme-7852E516BA094B01897820BB3432BE553FE5B28F00E9CA0EBC9DFFB8312EE8BF.css";
+fastn_dom.codeData.availableThemes["ztouch-theme"] = "code-theme-792C7BB9F4C8DFF3E0CBC354D2084DBF71BC5750C2C1357F0E7D936867AFAB62.css";
+
+let main_wrapper = function (parent) {
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+main(parenti0);
+}
+fastn_virtual.hydrate(main_wrapper);
+ftd.post_init();
+})();
+
+window.onload = function() {
+fastn_utils.resetFullHeight();
+fastn_utils.setFullHeight();
+};
+
+</script>
+</html>

@@ -331,7 +331,7 @@ padding-bottom: 3px;
 </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column __w-3"><div data-id="4" class="ft_column __w-4 __p-5 __bw-6 __br-7 __bc-8 __bgc-9"><div data-id="5" class="__mb-10 __c-11">LOGIN</div><div data-id="6" class="__mb-12 __c-13">UserName</div><input data-id="7" type="text" class="__w-14 __pl-15 __pr-16 __pt-17 __pb-18 __mb-19 __bw-20 __br-21 __bc-22 __c-23 __bgc-24"></input><div data-id="8" class="__mb-25 __c-26">Password</div><input data-id="9" type="text" class="__w-27 __pl-28 __pr-29 __pt-30 __pb-31 __mb-32 __bw-33 __br-34 __bc-35 __c-36 __bgc-37"></input><div data-id="10" class="__cur-38 __as-39 __w-40 __pl-41 __pr-42 __pt-43 __pb-44 __br-45 __c-46 __bgc-47 __ta-48">Submit</div></div></div><comment data-id="11"></comment></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column __w-3"><div data-id="4" class="ft_column __w-4 __p-5 __bw-6 __br-7 __bc-8 __bgc-9"><div data-id="5" class="__mb-10 __c-11">LOGIN</div><div data-id="6" class="__mb-12 __c-13">UserName</div><input data-id="7" type="text" class="__w-14 __pl-15 __pr-16 __pt-17 __pb-18 __mb-19 __bw-20 __br-21 __bc-22 __c-23 __bgc-24"></input><div data-id="8" class="__mb-25 __c-26">Password</div><input data-id="9" type="text" class="__w-27 __pl-28 __pr-29 __pt-30 __pb-31 __mb-32 __bw-33 __br-34 __bc-35 __c-36 __bgc-37"></input><a data-id="10" href="https://fastnui.trizwit.com/" class="__cur-38 __as-39 __w-40 __pl-41 __pr-42 __pt-43 __pb-44 __br-45 __c-46 __bgc-47 __ta-48">Submit</a></div></div><comment data-id="11"></comment></div></body><style id="styles">
 .__w-1 { width: 100%; }
 .__h-2 { height: 100%; }
 .__w-3 { width: 100%; }
@@ -394,7 +394,8 @@ __fastn_package_name__ = "avgayathri_github_io_fastndemo4";
 try {
 let parenti0 = avgayathri_github_io_fastndemo4_lib__loginpg(parent, inherited, {
 heading: "LOGIN",
-cta_button_1: "Submit"
+cta_button_1: "Submit",
+link_1: "https://fastnui.trizwit.com/"
 });
 let parenti1 = avgayathri_github_io_fastndemo4_lib__alert(parent, inherited, {
 text_1: "wrong password"
@@ -929,6 +930,7 @@ return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("info").get("
 }
 }
 ), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link_1, inherited);
 rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
 }
 ]), inherited);

@@ -3,7 +3,7 @@
 -- component loginpg:
 caption heading:
 string cta-button-1:
-;;string link-1:
+string link-1:
 boolean $is-active-1: false
 
 
@@ -74,7 +74,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
 color: black
 $on-click$: $ftd.set-bool($a = $show, v = true)
-;;link: $loginpg.link-1
+link: $loginpg.link-1
 
 -- end: ftd.column
 
@@ -127,3 +127,167 @@ width: fill-container
 -- end: ftd.row
 
 -- end: alert
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component header:
+ftd.image-src logo:
+string logo-name:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-link-1:
+string cta-link-2:
+string cta-link-3:
+
+
+-- ftd.row:
+width: fill-container
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+align-self: center
+spacing: space-between
+border-radius.px: 1
+background.solid: $inherited.colors.background.code
+
+-- ftd.image:
+src: $header.logo
+width.fixed.px: 95
+height: hug-content
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $header.logo-name
+margin-horizontal.px: 10
+color: $inherited.colors.scrim
+text-align: center
+align-self: center
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: right
+
+-- ftd.text: $header.cta-text-1
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.scrim
+link: $header.cta-link-1
+
+-- ftd.text: $header.cta-text-2 
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.scrim
+link: $header.cta-link-2
+
+-- ftd.text: $header.cta-text-3
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.scrim
+link: $header.cta-link-3
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header
+
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+ftd.image-src logo:
+string copyright:
+ftd.image-src github:
+ftd.image-src linkedin:
+string github-link:
+string linkedin-link:
+
+
+-- ftd.row:
+width: fill-container
+;;sticky: true
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+;;margin-vertical.px: 20
+;;margin-horizontal.px: 20
+align-self: center
+spacing: space-between
+border-radius.px: 1
+background.solid: $inherited.colors.background.code
+
+-- ftd.image:
+src: $footer.logo
+width.fixed.px: 50
+height: hug-content
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $footer.copyright
+margin-horizontal.px: 10
+color: $inherited.colors.scrim
+align-self: center
+height: fill-container
+width: fill-container
+
+
+
+-- ftd.row:
+height: fill-container
+align-content: right
+align-self: center
+
+
+-- ftd.image:
+src: $footer.github
+width.fixed.px: 30
+link: $footer.github-link
+
+
+-- ftd.image:
+src: $footer.linkedin
+width.fixed.px: 30
+margin-left.px: 12
+margin-top.px: 3
+link: $footer.github-link
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer
+
+
