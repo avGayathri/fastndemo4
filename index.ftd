@@ -2,7 +2,7 @@
 
 -- lib.loginpg: LOGIN
 cta-button-1: Submit
-link-1: http://127.0.0.1:8000/demo
+link-1: demo
 
 
 -- lib.alert:
