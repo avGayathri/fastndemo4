@@ -250,7 +250,6 @@ role: $inherited.types.copy-regular
 
 
 -- component footer:
-ftd.image-src logo:
 string copyright:
 ftd.image-src github:
 ftd.image-src linkedin:
@@ -273,12 +272,7 @@ spacing: space-between
 border-radius.px: 1
 background.solid: $inherited.colors.background.code
 
--- ftd.image:
-src: $footer.logo
-width.fixed.px: 50
-height: hug-content
-border-radius.px: 20
-margin-vertical.px: 10
+
 
 -- ftd.text: $footer.copyright
 margin-horizontal.px: 10
