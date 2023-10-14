@@ -2,7 +2,7 @@
 
 -- component loginpg:
 ;;caption heading:
-string cta-button-1:
+string cta-button:
 string link-1:
 boolean $is-active-1: false
 
@@ -20,8 +20,8 @@ height.fixed.percent: 60
 padding.px: 32  
 ;;background.solid: $inherited.colors.background.code
 border-radius.px: 1
-border-color: pink
-background.image: $assets.files.assets.bg3.jpg
+border-color: white
+background.image: $assets.files.assets.bg1.jpg
 align-self: center
 
 -- end: ftd.column
@@ -29,13 +29,13 @@ align-self: center
 
 -- ftd.column:
 border-width.px: 3
-width.fixed.percent: 20
+width.fixed.percent: 18
 height.fixed.percent: 60
 padding.px: 32  
 ;;background.solid: $inherited.colors.background.code
 border-radius.px: 1
-border-color: pink
-background.image: $assets.files.assets.bg1.jpg
+border-color: white
+background.image: $assets.files.assets.bg2.jpg
 align-self: center
 
 
@@ -44,10 +44,10 @@ align-self: center
 ;;role: $inherited.types.heading-tiny
 ;;color: 
 
--- ftd.text: UserName
+-- ftd.text: Username
 color: black
 margin-bottom.px: 4
-role: $inherited.types.button-large
+role: $inherited.types.heading-tiny
 
 -- ftd.text-input:
 padding-vertical.px: 6
@@ -63,7 +63,7 @@ background.solid: white
 color: black
 
 -- ftd.text: Password
-role: $inherited.types.button-large
+role: $inherited.types.heading-tiny
 color: black
 margin-bottom.px: 4
 
@@ -76,21 +76,21 @@ width: fill-container
 border-radius.px: 1
 border-width.px: 1
 border-color: $inherited.colors.border
-role: $inherited.types.label-large
+role: $inherited.types.button-medium
 background.solid: white
 color: black
 type: password
 
--- ftd.text: $loginpg.cta-button-1
-role: $inherited.types.button-large
+-- ftd.text: $loginpg.cta-button
+role: $inherited.types.heading-tiny
 text-align: center
 width.fixed.percent: 50
 padding-vertical.px: 8
 padding-horizontal.px: 24
 align-self: center
 border-radius.px: 5
-background.solid: pink;;$inherited.colors.info.text
-background.solid if {loginpg.is-active-1}: skyblue
+background.solid: grey;;$inherited.colors.info.text
+background.solid if {loginpg.is-active-1}: $inherited.colors.error.base
 $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
 color: black
@@ -198,6 +198,7 @@ margin-horizontal.px: 10
 color: $inherited.colors.scrim
 text-align: center
 align-self: center
+role: $inherited.types.heading-small
 
 -- ftd.row:
 width: fill-container
@@ -210,6 +211,7 @@ margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.scrim
 link: $header.cta-link-1
+role: $inherited.types.copy-regular
 
 -- ftd.text: $header.cta-text-2 
 text-align: center
@@ -217,6 +219,8 @@ margin-vertical.px: 28
 margin-horizontal.px: 0
 color: $inherited.colors.scrim
 link: $header.cta-link-2
+role: $inherited.types.copy-regular
+
 
 -- ftd.text: $header.cta-text-3
 text-align: center
@@ -224,6 +228,7 @@ margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.scrim
 link: $header.cta-link-3
+role: $inherited.types.copy-regular
 
 
 -- end: ftd.row
@@ -281,6 +286,7 @@ color: $inherited.colors.scrim
 align-self: center
 height: fill-container
 width: fill-container
+role: $inherited.types.copy-regular
 
 
 

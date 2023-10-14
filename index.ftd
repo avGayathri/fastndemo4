@@ -2,11 +2,12 @@
 colors: $winter-cs.main
 width: fill-container
 height: fill-container
-background.solid: $inherited.colors.error.base
+;;background.solid: white;;$inherited.colors.error.base
+background.image: $assets.files.assets.bg3.jpeg
 
 
 -- lib.loginpg: 
-cta-button-1: LOGIN
+cta-button: LOGIN
 link-1: demo
 
 
