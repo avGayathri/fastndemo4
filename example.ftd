@@ -28,6 +28,24 @@ border-radius.px: 1
 border-color: pink
 background.image: $assets.files.assets.bg3.jpg
 
+-- ftd.text: loginpg.cta-button
+role: $inherited.types.heading-tiny
+text-align: center
+width.fixed.percent: 70
+padding-vertical.px: 8
+padding-horizontal.px: 24
+align-self: center
+border-radius.px: 5
+background.solid: pink
+
+
+-- ftd.text: header.cta-text-2 
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.scrim
+;;link: $header.cta-link-2
+
 
 -- end: ftd.column
 
