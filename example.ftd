@@ -1,0 +1,36 @@
+-- ftd.row:
+width: fill-container
+height: fill-container
+background.solid: red
+align-content: center
+
+
+
+-- ftd.column:
+border-width.px: 3
+width.fixed.percent: 20
+height.fixed.percent: 60
+padding.px: 32  
+border-radius.px: 1
+border-color: pink
+background.image: $assets.files.assets.bg3.jpg
+
+
+
+-- end: ftd.column
+
+-- ftd.column:
+border-width.px: 3
+width.fixed.percent: 20
+height.fixed.percent: 60
+padding.px: 32  
+border-radius.px: 1
+border-color: pink
+background.image: $assets.files.assets.bg3.jpg
+
+
+-- end: ftd.column
+
+
+
+-- end: ftd.row

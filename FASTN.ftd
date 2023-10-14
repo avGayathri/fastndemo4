@@ -9,10 +9,12 @@ favicon: /-/avgayathri.github.io/fastndemo4/favicon.ico
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
 -- fastn.dependency: fastn-community.github.io/winter-cs
 -- fastn.dependency: fastnui.trizwit.com
+-- fastn.dependency: fastn-community.github.io/lato-typography
 
 -- fastn.auto-import: avgayathri.github.io/fastndemo4/FASTN/ds
 -- fastn.auto-import: avgayathri.github.io/fastndemo4/assets
 -- fastn.auto-import: doc-site
 -- fastn.auto-import: fastn-community.github.io/winter-cs
 -- fastn.auto-import: avgayathri.github.io/fastndemo4/lib
+-- fastn.auto-import: fastn-community.github.io/lato-typography
 

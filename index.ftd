@@ -1,13 +1,18 @@
+-- ftd.row:
+colors: $winter-cs.main
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.error.base
 
 
--- lib.loginpg: LOGIN
-cta-button-1: Submit
+-- lib.loginpg: 
+cta-button-1: LOGIN
 link-1: demo
 
 
--- lib.alert:
-text-1: wrong password 
+;;-- lib.alert:
+;;text-1: wrong password 
 
 
-
+-- end: ftd.row
 

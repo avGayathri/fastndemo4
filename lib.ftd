@@ -1,36 +1,56 @@
 ;;-- boolean $show: false
 
 -- component loginpg:
-caption heading:
+;;caption heading:
 string cta-button-1:
 string link-1:
 boolean $is-active-1: false
 
 
--- ftd.column:
+-- ftd.row:
 colors: $winter-cs.main
 width: fill-container
+height: fill-container
+align-content: center
+
+-- ftd.column:
+border-width.px: 3
+width.fixed.percent: 30
+height.fixed.percent: 60
+padding.px: 32  
+;;background.solid: $inherited.colors.background.code
+border-radius.px: 1
+border-color: pink
+background.image: $assets.files.assets.bg3.jpg
+align-self: center
+
+-- end: ftd.column
 
 
 -- ftd.column:
-border-width.px: 5
-width.fixed.percent: 27
+border-width.px: 3
+width.fixed.percent: 20
+height.fixed.percent: 60
 padding.px: 32  
-background.solid: $inherited.colors.background.code
+;;background.solid: $inherited.colors.background.code
 border-radius.px: 1
-border-color: black
+border-color: pink
+background.image: $assets.files.assets.bg1.jpg
+align-self: center
 
--- ftd.text: $loginpg.heading
-margin-bottom.px: 4
+
+;;-- ftd.text: $loginpg.heading
+;;margin-bottom.px: 4
 ;;role: $inherited.types.heading-tiny
-color: 
+;;color: 
 
 -- ftd.text: UserName
 color: black
 margin-bottom.px: 4
+role: $inherited.types.button-large
 
 -- ftd.text-input:
-padding-vertical.px: 4
+padding-vertical.px: 6
 padding-horizontal.px: 8
 margin-bottom.px: 16
 width: fill-container
@@ -38,39 +58,39 @@ border-radius.px: 1
 border-width.px: 1
 border-color: $inherited.colors.border
 type: text
-;;role: $inherited.types.copy-small
+role: $inherited.types.label-large
 background.solid: white
 color: black
 
 -- ftd.text: Password
-;;role: $inherited.types.copy-small
+role: $inherited.types.button-large
 color: black
 margin-bottom.px: 4
 
 
 -- ftd.text-input:
-padding-vertical.px: 4
+padding-vertical.px: 6
 padding-horizontal.px: 8
 margin-bottom.px: 20
 width: fill-container
 border-radius.px: 1
 border-width.px: 1
 border-color: $inherited.colors.border
-;;role: $inherited.types.copy-small
+role: $inherited.types.label-large
 background.solid: white
 color: black
 type: password
 
 -- ftd.text: $loginpg.cta-button-1
-;;role: $inherited.types.label-large
+role: $inherited.types.button-large
 text-align: center
-width.fixed.percent: 30
+width.fixed.percent: 50
 padding-vertical.px: 8
 padding-horizontal.px: 24
 align-self: center
 border-radius.px: 5
-background.solid: $inherited.colors.info.text
-background.solid if {loginpg.is-active-1}: $inherited.colors.custom.one
+background.solid: pink;;$inherited.colors.info.text
+background.solid if {loginpg.is-active-1}: skyblue
 $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
 color: black
@@ -79,7 +99,8 @@ link: $loginpg.link-1
 
 -- end: ftd.column
 
--- end: ftd.column
+
+-- end: ftd.row
 
 
 -- end: loginpg
