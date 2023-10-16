@@ -14,13 +14,13 @@ height: fill-container
 align-content: center
 
 -- ftd.column:
-border-width.px: 3
+border-width.px: 1
 width.fixed.percent: 30
 height.fixed.percent: 60
 padding.px: 32  
 ;;background.solid: $inherited.colors.background.code
 border-radius.px: 1
-border-color: white
+border-color: black
 background.image: $assets.files.assets.bg1.jpg
 align-self: center
 
@@ -28,13 +28,13 @@ align-self: center
 
 
 -- ftd.column:
-border-width.px: 3
+border-width.px: 1
 width.fixed.percent: 18
 height.fixed.percent: 60
 padding.px: 32  
 ;;background.solid: $inherited.colors.background.code
 border-radius.px: 1
-border-color: white
+border-color: black
 background.image: $assets.files.assets.bg2.jpg
 align-self: center
 
@@ -47,14 +47,14 @@ align-self: center
 -- ftd.text: Username
 color: black
 margin-bottom.px: 4
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-large;;$inherited.types.heading-tiny
 
 -- ftd.text-input:
 padding-vertical.px: 6
 padding-horizontal.px: 8
 margin-bottom.px: 16
 width: fill-container
-border-radius.px: 1
+border-radius.px: 20
 border-width.px: 1
 border-color: $inherited.colors.border
 type: text
@@ -63,7 +63,7 @@ background.solid: white
 color: black
 
 -- ftd.text: Password
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-large;;$inherited.types.heading-tiny
 color: black
 margin-bottom.px: 4
 
@@ -73,7 +73,7 @@ padding-vertical.px: 6
 padding-horizontal.px: 8
 margin-bottom.px: 20
 width: fill-container
-border-radius.px: 1
+border-radius.px: 20
 border-width.px: 1
 border-color: $inherited.colors.border
 role: $inherited.types.button-medium
@@ -88,7 +88,7 @@ width.fixed.percent: 50
 padding-vertical.px: 8
 padding-horizontal.px: 24
 align-self: center
-border-radius.px: 5
+border-radius.px: 10
 background.solid: grey;;$inherited.colors.info.text
 background.solid if {loginpg.is-active-1}: $inherited.colors.error.base
 $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)

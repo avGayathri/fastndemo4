@@ -2,8 +2,8 @@
 colors: $winter-cs.main
 width: fill-container
 height: fill-container
-;;background.solid: white;;$inherited.colors.error.base
-background.image: $assets.files.assets.bg3.jpeg
+;;background.solid: black;;$inherited.colors.error.base
+background.image: $assets.files.assets.bg4.jpeg
 
 
 -- lib.loginpg: 
