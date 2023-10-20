@@ -1,3 +1,14 @@
+-- lib.header:
+logo: $assets.files.assets.logo2.jpg
+logo-name: Percepta
+cta-text-1: Home
+cta-text-2: About
+cta-text-3: Projects
+cta-link-1: https://fastnui.trizwit.com/
+cta-link-2: https://fastnui.trizwit.com/
+cta-link-3: https://fastnui.trizwit.com/
+
+
 -- ftd.row:
 colors: $winter-cs.main
 width: fill-container
@@ -9,11 +20,17 @@ background.image: $assets.files.assets.bg4.jpeg
 -- lib.loginpg: 
 cta-button: LOGIN
 link-1: demo
-
-
-;;-- lib.alert:
-;;text-1: wrong password 
+cta-text-1: Forgot Password?
+cta-link-2: https://fastnui.trizwit.com/
+cta-text-2: Register
+cta-link-3: https://fastnui.trizwit.com/
 
 
 -- end: ftd.row
 
+-- lib.footer:
+copyright: Copyright © 2023 - Percepta
+github: $assets.files.assets.github.png
+linkedin: $assets.files.assets.linkedin.png
+github-link: https://fastnui.trizwit.com/
+linkedin-link: https://fastnui.trizwit.com/
