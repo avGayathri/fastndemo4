@@ -32,7 +32,7 @@ boolean $is-active-4: false
 
 
 -- ftd.column:
-width.fixed.percent: 33
+width.fixed.percent: 53
 height.fixed.percent: 73
 border-width.px: 3
 border-color: black
@@ -50,7 +50,7 @@ align-self: center
 
 
 -- ftd.text: $mob-biolink-page.name
-role: $inherited.types.heading-small
+role: $inherited.types.button-small
 color: black
 align-self: center
 margin-bottom.px: 3
@@ -66,9 +66,9 @@ margin-bottom.px: 40
 
 
 -- ftd.text: $mob-biolink-page.cta-button-1
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-medium
 text-align: center
-width.fixed.percent: 80
+width.fixed.percent: 100
 padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-bottom.px: 20
@@ -84,9 +84,9 @@ link: $mob-biolink-page.cta-link-1
 
 
 -- ftd.text: $mob-biolink-page.cta-button-2
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-medium
 text-align: center
-width.fixed.percent: 80
+width.fixed.percent: 100
 padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-bottom.px: 20
@@ -102,9 +102,9 @@ link: $mob-biolink-page.cta-link-2
 
 
 -- ftd.text: $mob-biolink-page.cta-button-3
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-medium
 text-align: center
-width.fixed.percent: 80
+width.fixed.percent: 100
 padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-bottom.px: 20
@@ -120,9 +120,9 @@ link: $mob-biolink-page.cta-link-3
 
 
 -- ftd.text: $mob-biolink-page.cta-button-4
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-medium
 text-align: center
-width.fixed.percent: 80
+width.fixed.percent: 100
 padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-bottom.px: 20
