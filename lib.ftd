@@ -408,7 +408,7 @@ width.fixed.percent: 25
 height.fixed.percent: 80
 border-width.px: 5
 border-color: black
-border-radius.px: 1
+border-radius.px: 10
 align-self: center
 background.image: $assets.files.assets.bg3.jpg
 
