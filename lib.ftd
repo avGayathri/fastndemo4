@@ -1,7 +1,7 @@
 
 
 -- component loginpg:
-;;caption heading:
+caption heading:
 string cta-button:
 string link-1:
 string cta-text-1:
@@ -16,21 +16,21 @@ boolean $is-active-3: false
 -- ftd.row:
 colors: $winter-cs.main
 width: fill-container
-height: fill-container
 align-content: center
+margin-top.px: 10
 
--- ftd.column:
-border-width.px: 1
-width.fixed.percent: 30
-height.fixed.percent: 60
-padding.px: 32  
+;;-- ftd.column:
+;;border-width.px: 1
+;;width.fixed.percent: 30
+;;height.fixed.percent: 60
+;;padding.px: 32  
 ;;background.solid: $inherited.colors.background.code
-border-radius.px: 1
-border-color: black
-background.image: $assets.files.assets.bg1.jpg
-align-self: center
+;;border-radius.px: 1
+;;border-color: black
+;;background.image: $assets.files.assets.bg1.jpg
+;;align-self: center
 
--- end: ftd.column
+;;-- end: ftd.column
 
 
 -- ftd.column:
@@ -38,22 +38,22 @@ border-width.px: 1
 width.fixed.percent: 18
 height.fixed.percent: 60
 padding.px: 32  
-;;background.solid: $inherited.colors.background.code
-border-radius.px: 1
+border-radius.px: 10
 border-color: black
 background.image: $assets.files.assets.bg2.jpg
 align-self: center
 
 
-;;-- ftd.text: $loginpg.heading
-;;margin-bottom.px: 4
-;;role: $inherited.types.heading-tiny
-;;color: 
+-- ftd.text: $loginpg.heading
+role: $inherited.types.heading-small
+align-self: center
+color: grey
 
 -- ftd.text: Username
 color: grey
 margin-bottom.px: 4
-role: $inherited.types.button-large;;$inherited.types.heading-tiny
+margin-top.px: 40
+role: $inherited.types.button-small
 
 -- ftd.text-input:
 padding-vertical.px: 6
@@ -69,7 +69,7 @@ background.solid: white
 color: black
 
 -- ftd.text: Password
-role: $inherited.types.button-large;;$inherited.types.heading-tiny
+role: $inherited.types.button-small
 color: grey
 margin-bottom.px: 4
 
@@ -77,6 +77,7 @@ margin-bottom.px: 4
 -- ftd.text-input:
 padding-vertical.px: 6
 padding-horizontal.px: 8
+;;margin-top.px: 10
 margin-bottom.px: 10
 width: fill-container
 border-radius.px: 10
@@ -90,7 +91,8 @@ type: password
 
 -- ftd.text: $loginpg.cta-text-1
 role: $inherited.types.button-small
-color: darkblue
+color: white
+margin-top.px: 10
 margin-bottom.px: 20
 margin-left.px: 90
 align-self: center
@@ -102,28 +104,28 @@ $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-2, v = false)
 
 
 -- ftd.text: $loginpg.cta-button
-role: $inherited.types.heading-tiny
+role: $inherited.types.button-small;;$inherited.types.heading-tiny
 text-align: center
 width.fixed.percent: 50
 padding-vertical.px: 8
 padding-horizontal.px: 24
-margin-bottom.px: 50
+margin-top.px: 30
 align-self: center
 border-radius.px: 20
-background.solid: grey;;$inherited.colors.info.text
+background.solid: grey
 background.solid if {loginpg.is-active-1}: $inherited.colors.error.base
 $on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
 color: black
-;;$on-click$: $ftd.set-bool($a = $show, v = true)
 link: $loginpg.link-1
 
 
 -- ftd.row:
+margin-top.px: 20
 
 -- ftd.text: New User?
 role: $inherited.types.blockquote
-color: black
+color: grey
 margin-bottom.px: 30
 margin-left.px: 30
 align-self: center
@@ -131,7 +133,7 @@ align-self: center
 
 -- ftd.text: $loginpg.cta-text-2
 role: $inherited.types.blockquote
-color: darkblue
+color: white
 margin-bottom.px: 30
 margin-left.px: 10
 align-self: center
@@ -168,9 +170,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-3, v = false)
 string text-1:
 
 -- ftd.row:
-;;if: {show}
 width.fixed.percent: 20
-;;height.fixed.px: 20
 border-radius.px: 1
 border-width.px: 3
 border-color: black
@@ -187,7 +187,7 @@ color: black
 align-self: center
 text-align: center
 width: fill-container
-;;role:
+role: $inherited.types.copy-regular
 
 
 

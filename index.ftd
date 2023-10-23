@@ -18,13 +18,13 @@ background.image: $assets.files.assets.bg4.jpeg
 
 
 -- lib.loginpg: 
+heading: Login
 cta-button: LOGIN
 link-1: demo
 cta-text-1: Forgot Password?
 cta-link-2: https://fastnui.trizwit.com/
 cta-text-2: Register
 cta-link-3: https://fastnui.trizwit.com/
-
 
 -- end: ftd.row
 

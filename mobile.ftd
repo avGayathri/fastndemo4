@@ -1,100 +1,161 @@
--- desk-footer:
-copyright: Copyright © 2023 - Percepta
-logo-1: $assets.files.assets.instagram.png
-logo-2: $assets.files.assets.linkedin.png
-logo-3: $assets.files.assets.facebook.png
-logo-4: $assets.files.assets.twitter.png
-logo-5: $assets.files.assets.gplus.png
-cta-link-1: https://fastnui.trizwit.com/
+-- loginpg: 
+heading: Login
+cta-button: LOGIN
+link-1: demo
+cta-text-1: Forgot Password?
 cta-link-2: https://fastnui.trizwit.com/
+cta-text-2: Register
 cta-link-3: https://fastnui.trizwit.com/
-cta-link-4: https://fastnui.trizwit.com/
-cta-link-5: https://fastnui.trizwit.com/
 
 
-
-
--- component desk-footer:
-string copyright:
-ftd.image-src logo-1:
-ftd.image-src logo-2:
-ftd.image-src logo-3:
-ftd.image-src logo-4:
-ftd.image-src logo-5:
-string cta-link-1:
+-- component loginpg:
+caption heading:
+string cta-button:
+string link-1:
+string cta-text-1:
 string cta-link-2:
+string cta-text-2:
 string cta-link-3:
-string cta-link-4:
-string cta-link-5:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+
+
+-- ftd.row:
+colors: $winter-cs.main
+width: fill-container
+height: fill-container
+align-content: center
+
+;;-- ftd.column:
+;;border-width.px: 1
+;;width.fixed.percent: 30
+;;height.fixed.percent: 60
+;;padding.px: 32  
+;;background.solid: $inherited.colors.background.code
+;;border-radius.px: 1
+;;border-color: black
+;;background.image: $assets.files.assets.bg1.jpg
+;;align-self: center
+
+;;-- end: ftd.column
 
 
 -- ftd.column:
-width: fill-container
-
-
--- ftd.row:
-width: fill-container
-height.fixed.px: 100
-align-content: center
-background.solid: $inherited.colors.background.code
-
-
--- ftd.image:
-src: $desk-footer.logo-1
-width.fixed.px: 45
-margin-right.px: 20
-margin-top.px: 3
-link: $desk-footer.cta-link-1
-
-
--- ftd.image:
-src: $desk-footer.logo-2
-width.fixed.px: 45
-margin-right.px: 20
-margin-top.px: 3
-link: $desk-footer.cta-link-2
-
--- ftd.image:
-src: $desk-footer.logo-3
-width.fixed.px: 45
-margin-right.px: 20
-margin-top.px: 3
-link: $desk-footer.cta-link-3
-
--- ftd.image:
-src: $desk-footer.logo-4
-width.fixed.px: 45
-margin-right.px: 20
-margin-top.px: 3
-link: $desk-footer.cta-link-4
-
--- ftd.image:
-src: $desk-footer.logo-5
-width.fixed.px: 45
-margin-top.px: 3
-link: $desk-footer.cta-link-5
-
-
--- end: ftd.row
-
--- ftd.row:
-width: fill-container
-height.fixed.px: 50 
+border-width.px: 1
+width.fixed.percent: 18
+height.fixed.percent: 60
+padding.px: 32  
+border-radius.px: 10
+border-color: black
+background.image: $assets.files.assets.bg2.jpg
 align-self: center
-align-content: center
-border-radius.px: 1
-background.solid: black
 
 
+-- ftd.text: $loginpg.heading
+role: $inherited.types.heading-small
+align-self: center
+color: grey
 
--- ftd.text: $desk-footer.copyright
-margin-top.px: 15
+-- ftd.text: Username
+color: grey
+margin-bottom.px: 4
+margin-top.px: 40
+role: $inherited.types.button-small
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 8
+margin-bottom.px: 16
+width: fill-container
+border-radius.px: 10
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.label-large
+background.solid: white
+color: black
+
+-- ftd.text: Password
+role: $inherited.types.button-small
+color: grey
+margin-bottom.px: 4
+
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 8
+;;margin-top.px: 10
+margin-bottom.px: 10
+width: fill-container
+border-radius.px: 10
+border-width.px: 1
+border-color: $inherited.colors.border
+role: $inherited.types.button-medium
+background.solid: white
+color: black
+type: password
+
+
+-- ftd.text: $loginpg.cta-text-1
+role: $inherited.types.button-small
 color: white
-height: fill-container
-role: $inherited.types.copy-regular
+margin-top.px: 10
+margin-bottom.px: 20
+margin-left.px: 90
+align-self: center
+link: $loginpg.cta-link-2
+color if {loginpg.is-active-2}: skyblue
+$on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-2, v = false)
+
+
+
+-- ftd.text: $loginpg.cta-button
+role: $inherited.types.button-small;;$inherited.types.heading-tiny
+text-align: center
+width.fixed.percent: 50
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-top.px: 30
+align-self: center
+border-radius.px: 20
+background.solid: grey
+background.solid if {loginpg.is-active-1}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
+color: black
+link: $loginpg.link-1
+
+
+-- ftd.row:
+margin-top.px: 20
+
+-- ftd.text: New User?
+role: $inherited.types.blockquote
+color: grey
+margin-bottom.px: 30
+margin-left.px: 30
+align-self: center
+;;link: $loginpg.cta-link-2
+
+-- ftd.text: $loginpg.cta-text-2
+role: $inherited.types.blockquote
+color: white
+margin-bottom.px: 30
+margin-left.px: 10
+align-self: center
+link: $loginpg.cta-link-3
+color if {loginpg.is-active-3}: skyblue
+$on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-3, v = false)
 
 -- end: ftd.row
 
 -- end: ftd.column
 
--- end: desk-footer
+
+-- end: ftd.row
+
+
+-- end: loginpg
