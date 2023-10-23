@@ -28,9 +28,15 @@ cta-link-3: https://fastnui.trizwit.com/
 
 -- end: ftd.row
 
--- lib.footer:
+-- lib.desk-footer:
 copyright: Copyright © 2023 - Percepta
-github: $assets.files.assets.github.png
-linkedin: $assets.files.assets.linkedin.png
-github-link: https://fastnui.trizwit.com/
-linkedin-link: https://fastnui.trizwit.com/
+logo-1: $assets.files.assets.instagram.png
+logo-2: $assets.files.assets.linkedin.png
+logo-3: $assets.files.assets.facebook.png
+logo-4: $assets.files.assets.twitter.png
+logo-5: $assets.files.assets.gplus.png
+cta-link-1: https://fastnui.trizwit.com/
+cta-link-2: https://fastnui.trizwit.com/
+cta-link-3: https://fastnui.trizwit.com/
+cta-link-4: https://fastnui.trizwit.com/
+cta-link-5: https://fastnui.trizwit.com/
