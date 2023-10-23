@@ -1,4 +1,4 @@
--- loginpg: 
+-- mob-loginpg: 
 heading: Login
 cta-button: LOGIN
 link-1: demo
@@ -8,7 +8,7 @@ cta-text-2: Register
 cta-link-3: https://fastnui.trizwit.com/
 
 
--- component loginpg:
+-- component mob-loginpg:
 caption heading:
 string cta-button:
 string link-1:
@@ -43,16 +43,16 @@ align-content: center
 
 -- ftd.column:
 border-width.px: 1
-width.fixed.percent: 18
-height.fixed.percent: 60
-padding.px: 32  
+width.fixed.percent: 55
+height.fixed.percent: 56
+padding.px: 15 
 border-radius.px: 10
 border-color: black
 background.image: $assets.files.assets.bg2.jpg
 align-self: center
 
 
--- ftd.text: $loginpg.heading
+-- ftd.text: $mob-loginpg.heading
 role: $inherited.types.heading-small
 align-self: center
 color: grey
@@ -60,7 +60,7 @@ color: grey
 -- ftd.text: Username
 color: grey
 margin-bottom.px: 4
-margin-top.px: 40
+margin-top.px: 20
 role: $inherited.types.button-small
 
 -- ftd.text-input:
@@ -85,7 +85,6 @@ margin-bottom.px: 4
 -- ftd.text-input:
 padding-vertical.px: 6
 padding-horizontal.px: 8
-;;margin-top.px: 10
 margin-bottom.px: 10
 width: fill-container
 border-radius.px: 10
@@ -97,35 +96,35 @@ color: black
 type: password
 
 
--- ftd.text: $loginpg.cta-text-1
+-- ftd.text: $mob-loginpg.cta-text-1
 role: $inherited.types.button-small
 color: white
 margin-top.px: 10
-margin-bottom.px: 20
+margin-bottom.px: 10
 margin-left.px: 90
 align-self: center
-link: $loginpg.cta-link-2
-color if {loginpg.is-active-2}: skyblue
-$on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-2, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-2, v = false)
+link: $mob-loginpg.cta-link-2
+color if {mob-loginpg.is-active-2}: skyblue
+$on-mouse-enter$: $ftd.set-bool($a = $mob-loginpg.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $mob-loginpg.is-active-2, v = false)
 
 
 
--- ftd.text: $loginpg.cta-button
-role: $inherited.types.button-small;;$inherited.types.heading-tiny
+-- ftd.text: $mob-loginpg.cta-button
+role: $inherited.types.button-small
 text-align: center
 width.fixed.percent: 50
 padding-vertical.px: 8
 padding-horizontal.px: 24
-margin-top.px: 30
+margin-top.px: 10
 align-self: center
 border-radius.px: 20
 background.solid: grey
-background.solid if {loginpg.is-active-1}: $inherited.colors.error.base
-$on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-1, v = false)
+background.solid if {mob-loginpg.is-active-1}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $mob-loginpg.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $mob-loginpg.is-active-1, v = false)
 color: black
-link: $loginpg.link-1
+link: $mob-loginpg.link-1
 
 
 -- ftd.row:
@@ -137,18 +136,18 @@ color: grey
 margin-bottom.px: 30
 margin-left.px: 30
 align-self: center
-;;link: $loginpg.cta-link-2
 
--- ftd.text: $loginpg.cta-text-2
+
+-- ftd.text: $mob-loginpg.cta-text-2
 role: $inherited.types.blockquote
 color: white
 margin-bottom.px: 30
 margin-left.px: 10
 align-self: center
-link: $loginpg.cta-link-3
-color if {loginpg.is-active-3}: skyblue
-$on-mouse-enter$: $ftd.set-bool($a = $loginpg.is-active-3, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-3, v = false)
+link: $mob-loginpg.cta-link-3
+color if {mob-loginpg.is-active-3}: skyblue
+$on-mouse-enter$: $ftd.set-bool($a = $mob-loginpg.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $mob-loginpg.is-active-3, v = false)
 
 -- end: ftd.row
 
@@ -158,4 +157,4 @@ $on-mouse-leave$: $ftd.set-bool($a = $loginpg.is-active-3, v = false)
 -- end: ftd.row
 
 
--- end: loginpg
+-- end: mob-loginpg
