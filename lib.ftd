@@ -107,7 +107,7 @@ margin-top.px: 10
 
 -- ftd.column:
 border-width.px: 1
-width.fixed.percent: 22
+width.fixed.percent: 21
 height.fixed.percent: 60
 padding.px: 22  
 border-radius.px: 10
@@ -175,7 +175,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $desk-loginpg.is-active-2, v = false)
 -- ftd.text: $desk-loginpg.cta-button
 role: $inherited.types.button-small
 text-align: center
-width.fixed.percent: 50
+width.fixed.percent: 55
 padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-top.px: 30
