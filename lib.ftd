@@ -309,66 +309,90 @@ $on-mouse-leave$: $ftd.set-bool($a = $header.is-active-3, v = false)
 
 
 
--- component footer:
+-- component desk-footer:
 string copyright:
-ftd.image-src github:
-ftd.image-src linkedin:
-string github-link:
-string linkedin-link:
+ftd.image-src logo-1:
+ftd.image-src logo-2:
+ftd.image-src logo-3:
+ftd.image-src logo-4:
+ftd.image-src logo-5:
+string cta-link-1:
+string cta-link-2:
+string cta-link-3:
+string cta-link-4:
+string cta-link-5:
 
 
--- ftd.row:
+-- ftd.column:
 width: fill-container
 
 
 -- ftd.row:
 width: fill-container
-height: hug-content
-padding-horizontal.px: 50
-align-self: center
-spacing: space-between
-border-radius.px: 1
+height.fixed.px: 100
+align-content: center
 background.solid: $inherited.colors.background.code
 
 
-
--- ftd.text: $footer.copyright
-margin-horizontal.px: 10
-color: white
-align-self: center
-height: fill-container
-width: fill-container
-role: $inherited.types.copy-regular
+-- ftd.image:
+src: $desk-footer.logo-1
+width.fixed.px: 45
+margin-right.px: 20
+margin-top.px: 3
+link: $desk-footer.cta-link-1
 
 
+-- ftd.image:
+src: $desk-footer.logo-2
+width.fixed.px: 45
+margin-right.px: 20
+margin-top.px: 3
+link: $desk-footer.cta-link-2
+
+-- ftd.image:
+src: $desk-footer.logo-3
+width.fixed.px: 45
+margin-right.px: 20
+margin-top.px: 3
+link: $desk-footer.cta-link-3
+
+-- ftd.image:
+src: $desk-footer.logo-4
+width.fixed.px: 45
+margin-right.px: 20
+margin-top.px: 3
+link: $desk-footer.cta-link-4
+
+-- ftd.image:
+src: $desk-footer.logo-5
+width.fixed.px: 45
+margin-top.px: 3
+link: $desk-footer.cta-link-5
+
+
+-- end: ftd.row
 
 -- ftd.row:
-height: fill-container
-align-content: right
+width: fill-container
+height.fixed.px: 50 
 align-self: center
+align-content: center
+border-radius.px: 1
+background.solid: black
 
 
--- ftd.image:
-src: $footer.github
-width.fixed.px: 30
-link: $footer.github-link
 
-
--- ftd.image:
-src: $footer.linkedin
-width.fixed.px: 30
-margin-left.px: 12
-margin-top.px: 3
-link: $footer.github-link
-
+-- ftd.text: $desk-footer.copyright
+margin-top.px: 15
+color: white
+height: fill-container
+role: $inherited.types.copy-regular
 
 -- end: ftd.row
 
--- end: ftd.row
+-- end: ftd.column
 
--- end: ftd.row
-
--- end: footer
+-- end: desk-footer
 
 
 
