@@ -319,14 +319,12 @@ string linkedin-link:
 
 -- ftd.row:
 width: fill-container
-;;sticky: true
+
 
 -- ftd.row:
 width: fill-container
 height: hug-content
 padding-horizontal.px: 50
-;;margin-vertical.px: 20
-;;margin-horizontal.px: 20
 align-self: center
 spacing: space-between
 border-radius.px: 1
@@ -336,7 +334,7 @@ background.solid: $inherited.colors.background.code
 
 -- ftd.text: $footer.copyright
 margin-horizontal.px: 10
-color: white;;$inherited.colors.scrim
+color: white
 align-self: center
 height: fill-container
 width: fill-container
@@ -383,8 +381,89 @@ link: $footer.github-link
 
 
 
-
 -- component biolink-page:
+ftd.image-src propic:
+caption name:
+string about:
+string cta-button-1:
+string cta-button-2:
+string cta-button-3:
+string cta-button-4:
+string cta-link-1:
+string cta-link-2:
+string cta-link-3:
+string cta-link-4:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+boolean $is-active-4: false
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+
+
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+-- lib.desk-biolink-page:
+propic: $biolink-page.propic
+name: $biolink-page.name
+about: $biolink-page.about
+cta-button-1: $biolink-page.cta-button-1
+cta-button-2: $biolink-page.cta-button-2
+cta-button-3: $biolink-page.cta-button-3
+cta-button-4: $biolink-page.cta-button-4
+cta-link-1: $biolink-page.cta-link-1
+cta-link-2: $biolink-page.cta-link-2
+cta-link-3: $biolink-page.cta-link-3
+cta-link-4: $biolink-page.cta-link-4
+
+-- end: ftd.column
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- lib.mob-biolink-page:
+propic: $biolink-page.propic
+name: $biolink-page.name
+about: $biolink-page.about
+cta-button-1: $biolink-page.cta-button-1
+cta-button-2: $biolink-page.cta-button-2
+cta-button-3: $biolink-page.cta-button-3
+cta-button-4: $biolink-page.cta-button-4
+cta-link-1: $biolink-page.cta-link-1
+cta-link-2: $biolink-page.cta-link-2
+cta-link-3: $biolink-page.cta-link-3
+cta-link-4: $biolink-page.cta-link-4
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: biolink-page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component desk-biolink-page:
 ftd.image-src propic:
 caption name:
 string about:
@@ -406,6 +485,8 @@ boolean $is-active-4: false
 -- ftd.column:
 width.fixed.percent: 25
 height.fixed.percent: 80
+margin-bottom.px: 10
+margin-top.px: 10
 border-width.px: 5
 border-color: black
 border-radius.px: 10
@@ -414,21 +495,21 @@ background.image: $assets.files.assets.bg3.jpg
 
 
 -- ftd.image:
-src: $biolink-page.propic
+src: $desk-biolink-page.propic
 width.fixed.px: 200
 border-radius.px: 100
 padding.px: 20 
 align-self: center
 
 
--- ftd.text: $biolink-page.name
+-- ftd.text: $desk-biolink-page.name
 role: $inherited.types.heading-small
 color: black
 align-self: center
 margin-bottom.px: 3
 margin-top.px: 5
 
--- ftd.text: $biolink-page.about
+-- ftd.text: $desk-biolink-page.about
 role: $inherited.types.copy-small
 color: black
 align-self: center
@@ -437,7 +518,7 @@ margin-bottom.px: 40
 
 
 
--- ftd.text: $biolink-page.cta-button-1
+-- ftd.text: $desk-biolink-page.cta-button-1
 role: $inherited.types.heading-tiny
 text-align: center
 width.fixed.percent: 80
@@ -447,15 +528,15 @@ margin-bottom.px: 20
 align-self: center
 border-radius.px: 20
 background.solid: grey
-background.solid if {biolink-page.is-active-1}: $inherited.colors.error.base
-$on-mouse-enter$: $ftd.set-bool($a = $biolink-page.is-active-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $biolink-page.is-active-1, v = false)
+background.solid if {desk-biolink-page.is-active-1}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $desk-biolink-page.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $desk-biolink-page.is-active-1, v = false)
 color: white
-link: $biolink-page.cta-link-1
+link: $desk-biolink-page.cta-link-1
 
 
 
--- ftd.text: $biolink-page.cta-button-2
+-- ftd.text: $desk-biolink-page.cta-button-2
 role: $inherited.types.heading-tiny
 text-align: center
 width.fixed.percent: 80
@@ -465,15 +546,15 @@ margin-bottom.px: 20
 align-self: center
 border-radius.px: 20
 background.solid: grey
-background.solid if {biolink-page.is-active-2}: $inherited.colors.error.base
-$on-mouse-enter$: $ftd.set-bool($a = $biolink-page.is-active-2, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $biolink-page.is-active-2, v = false)
+background.solid if {desk-biolink-page.is-active-2}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $desk-biolink-page.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $desk-biolink-page.is-active-2, v = false)
 color: white
-link: $biolink-page.cta-link-2
+link: $desk-biolink-page.cta-link-2
 
 
 
--- ftd.text: $biolink-page.cta-button-3
+-- ftd.text: $desk-biolink-page.cta-button-3
 role: $inherited.types.heading-tiny
 text-align: center
 width.fixed.percent: 80
@@ -483,15 +564,15 @@ margin-bottom.px: 20
 align-self: center
 border-radius.px: 20
 background.solid: grey
-background.solid if {biolink-page.is-active-3}: $inherited.colors.error.base
-$on-mouse-enter$: $ftd.set-bool($a = $biolink-page.is-active-3, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $biolink-page.is-active-3, v = false)
+background.solid if {desk-biolink-page.is-active-3}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $desk-biolink-page.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $desk-biolink-page.is-active-3, v = false)
 color: white
-link: $biolink-page.cta-link-3
+link: $desk-biolink-page.cta-link-3
 
 
 
--- ftd.text: $biolink-page.cta-button-4
+-- ftd.text: $desk-biolink-page.cta-button-4
 role: $inherited.types.heading-tiny
 text-align: center
 width.fixed.percent: 80
@@ -501,14 +582,156 @@ margin-bottom.px: 20
 align-self: center
 border-radius.px: 20
 background.solid: grey
-background.solid if {biolink-page.is-active-4}: $inherited.colors.error.base
-$on-mouse-enter$: $ftd.set-bool($a = $biolink-page.is-active-4, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $biolink-page.is-active-4, v = false)
+background.solid if {desk-biolink-page.is-active-4}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $desk-biolink-page.is-active-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $desk-biolink-page.is-active-4, v = false)
 color: white
-link: $biolink-page.cta-link-4
+link: $desk-biolink-page.cta-link-4
 
 
 
 -- end: ftd.column
 
--- end: biolink-page
+-- end: desk-biolink-page
+
+
+
+
+
+
+
+
+
+
+
+
+-- component mob-biolink-page:
+ftd.image-src propic:
+caption name:
+string about:
+string cta-button-1:
+string cta-button-2:
+string cta-button-3:
+string cta-button-4:
+string cta-link-1:
+string cta-link-2:
+string cta-link-3:
+string cta-link-4:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+boolean $is-active-4: false
+
+
+
+-- ftd.column:
+width.fixed.percent: 53
+height.fixed.percent: 55
+margin-top.px: 10
+margin-bottom.px: 10
+border-width.px: 3
+border-color: black
+border-radius.px: 10
+align-self: center
+background.image: $assets.files.assets.bg3.jpg
+
+
+-- ftd.image:
+src: $mob-biolink-page.propic
+width.fixed.px: 100
+border-radius.px: 100
+padding.px: 20 
+align-self: center
+
+
+-- ftd.text: $mob-biolink-page.name
+role: $inherited.types.button-small
+color: black
+align-self: center
+margin-bottom.px: 5
+margin-top.px: 5
+
+-- ftd.text: $mob-biolink-page.about
+role: $inherited.types.copy-small
+color: black
+align-self: center
+margin-bottom.px: 15
+
+
+
+
+-- ftd.text: $mob-biolink-page.cta-button-1
+role: $inherited.types.button-medium
+text-align: center
+width.fixed.percent: 90
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-bottom.px: 10
+align-self: center
+border-radius.px: 20
+background.solid: grey
+background.solid if {mob-biolink-page.is-active-1}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $mob-biolink-page.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $mob-biolink-page.is-active-1, v = false)
+color: white
+link: $mob-biolink-page.cta-link-1
+
+
+
+-- ftd.text: $mob-biolink-page.cta-button-2
+role: $inherited.types.button-medium
+text-align: center
+width.fixed.percent: 90
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-bottom.px: 10
+align-self: center
+border-radius.px: 20
+background.solid: grey
+background.solid if {mob-biolink-page.is-active-2}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $mob-biolink-page.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $mob-biolink-page.is-active-2, v = false)
+color: white
+link: $mob-biolink-page.cta-link-2
+
+
+
+-- ftd.text: $mob-biolink-page.cta-button-3
+role: $inherited.types.button-medium
+text-align: center
+width.fixed.percent: 90
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-bottom.px: 10
+align-self: center
+border-radius.px: 20
+background.solid: grey
+background.solid if {mob-biolink-page.is-active-3}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $mob-biolink-page.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $mob-biolink-page.is-active-3, v = false)
+color: white
+link: $mob-biolink-page.cta-link-3
+
+
+
+-- ftd.text: $mob-biolink-page.cta-button-4
+role: $inherited.types.button-medium
+text-align: center
+width.fixed.percent: 90
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-bottom.px: 10
+align-self: center
+border-radius.px: 20
+background.solid: grey
+background.solid if {mob-biolink-page.is-active-4}: $inherited.colors.error.base
+$on-mouse-enter$: $ftd.set-bool($a = $mob-biolink-page.is-active-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $mob-biolink-page.is-active-4, v = false)
+color: white
+link: $mob-biolink-page.cta-link-4
+
+
+
+-- end: ftd.column
+
+-- end: mob-biolink-page
