@@ -107,9 +107,9 @@ margin-top.px: 10
 
 -- ftd.column:
 border-width.px: 1
-width.fixed.percent: 18
+width.fixed.percent: 22
 height.fixed.percent: 60
-padding.px: 32  
+padding.px: 22  
 border-radius.px: 10
 border-color: black
 background.image: $assets.files.assets.bg2.jpg
@@ -163,10 +163,8 @@ type: password
 -- ftd.text: $desk-loginpg.cta-text-1
 role: $inherited.types.button-small
 color: white
-margin-top.px: 10
-margin-bottom.px: 20
-margin-left.px: 90
-align-self: center
+margin-bottom.px: 20 
+align-self: end
 link: $desk-loginpg.cta-link-2
 color if {desk-loginpg.is-active-2}: skyblue
 $on-mouse-enter$: $ftd.set-bool($a = $desk-loginpg.is-active-2, v = true)
@@ -193,12 +191,13 @@ link: $desk-loginpg.link-1
 
 -- ftd.row:
 margin-top.px: 20
+align-self: center
+
 
 -- ftd.text: New User?
 role: $inherited.types.blockquote
 color: grey
 margin-bottom.px: 30
-margin-left.px: 30
 align-self: center
 
 
