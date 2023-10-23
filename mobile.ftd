@@ -43,7 +43,7 @@ align-content: center
 
 -- ftd.column:
 border-width.px: 1
-width.fixed.percent: 55
+width.fixed.percent: 60
 height.fixed.percent: 56
 padding.px: 15 
 border-radius.px: 10
