@@ -13,7 +13,6 @@ cta-link-3: https://fastnui.trizwit.com/
 colors: $winter-cs.main
 width: fill-container
 height: fill-container
-;;background.solid: black;;$inherited.colors.error.base
 background.image: $assets.files.assets.bg4.jpeg
 
 
