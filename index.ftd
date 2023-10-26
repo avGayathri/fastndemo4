@@ -14,6 +14,8 @@ colors: $winter-cs.main
 width: fill-container
 height: fill-container
 background.image: $assets.files.assets.bg4.jpeg
+;;background.solid: white
+padding.px: 70
 
 
 -- lib.loginpg: 
