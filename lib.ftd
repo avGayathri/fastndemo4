@@ -755,9 +755,7 @@ width.fixed.percent: 20
 height.fixed.percent: 80
 margin-bottom.px: 10
 margin-top.px: 10
-border-width.px: 5
-border-color: black
-border-radius.px: 10
+border-radius.px: 5
 align-self: center
 background.image: $assets.files.assets.bg3.jpg
 
@@ -772,14 +770,14 @@ align-self: center
 
 -- ftd.text: $desk-biolink-page.name
 role: $inherited.types.heading-small
-color: black
+color: white
 align-self: center
 margin-bottom.px: 3
 margin-top.px: 5
 
 -- ftd.text: $desk-biolink-page.about
 role: $inherited.types.copy-small
-color: black
+color: white
 align-self: center
 margin-bottom.px: 40
 
@@ -897,16 +895,14 @@ width.fixed.percent: 53
 height.fixed.percent: 55
 margin-top.px: 10
 margin-bottom.px: 10
-border-width.px: 3
-border-color: black
-border-radius.px: 10
+border-radius.px: 5
 align-self: center
 background.image: $assets.files.assets.bg3.jpg
 
 
 -- ftd.image:
 src: $mob-biolink-page.propic
-width.fixed.px: 100
+width.fixed.vw: 100
 border-radius.px: 100
 padding.px: 20 
 align-self: center
@@ -914,14 +910,14 @@ align-self: center
 
 -- ftd.text: $mob-biolink-page.name
 role: $inherited.types.button-small
-color: black
+color: white
 align-self: center
 margin-bottom.px: 5
 margin-top.px: 5
 
 -- ftd.text: $mob-biolink-page.about
 role: $inherited.types.copy-small
-color: black
+color: white
 align-self: center
 margin-bottom.px: 15
 
