@@ -902,7 +902,7 @@ background.image: $assets.files.assets.bg3.jpg
 
 -- ftd.image:
 src: $mob-biolink-page.propic
-width.fixed.px: 100
+width.fixed.px: 130
 border-radius.px: 100
 padding.px: 20 
 align-self: center
