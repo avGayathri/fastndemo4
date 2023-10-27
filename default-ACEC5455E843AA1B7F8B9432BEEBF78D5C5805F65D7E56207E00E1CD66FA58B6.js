@@ -1347,7 +1347,7 @@ class Node2 {
         return this.#parent;
     }
     removeAllFaviconLinks() {
-        if (hydrating) {
+        if (hydrating || rerender) {
             const links = document.head.querySelectorAll('link[rel="shortcut icon"]');
             links.forEach( link => {
                 link.parentNode.removeChild(link);
@@ -1356,7 +1356,7 @@ class Node2 {
     }
 
     setFavicon(url) {
-        if (hydrating) {
+        if (hydrating || rerender) {
             if (url instanceof fastn.recordInstanceClass) url = url.get('src');
             while (true) {
                 if (url instanceof fastn.mutableClass) url = url.get();
@@ -1443,7 +1443,7 @@ class Node2 {
         }
     }
     updateMetaTitle(value) {
-        if (!ssr && hydrating) {
+        if (!ssr && (hydrating || rerender)) {
             if (!fastn_utils.isNull(value)) window.document.title = value;
         }
     }
@@ -1452,7 +1452,7 @@ class Node2 {
             this.removeMetaTagByName(name);
             return;
         }
-        if (!ssr && hydrating) {
+        if (!ssr && (hydrating || rerender)) {
             const metaTag = window.document.createElement('meta');
             metaTag.setAttribute('name', name);
             metaTag.setAttribute('content', value);
@@ -1464,7 +1464,7 @@ class Node2 {
             this.removeMetaTagByProperty(property);
             return;
         }
-        if (!ssr && hydrating) {
+        if (!ssr && (hydrating || rerender)) {
             const metaTag = window.document.createElement('meta');
             metaTag.setAttribute('property', property);
             metaTag.setAttribute('content', value);
@@ -1472,7 +1472,7 @@ class Node2 {
         }
     }
     removeMetaTagByName(name) {
-        if (!ssr && hydrating) {
+        if (!ssr && (hydrating || rerender)) {
             const metaTags = document.getElementsByTagName('meta');
             for (let i = 0; i < metaTags.length; i++) {
                 const metaTag = metaTags[i];
@@ -1484,7 +1484,7 @@ class Node2 {
         }
     }
     removeMetaTagByProperty(property) {
-        if (!ssr && hydrating) {
+        if (!ssr && (hydrating || rerender)) {
             const metaTags = document.getElementsByTagName('meta');
             for (let i = 0; i < metaTags.length; i++) {
                 const metaTag = metaTags[i];
@@ -1499,7 +1499,7 @@ class Node2 {
     attachCss(property, value, createClass, className) {
         let propertyShort = fastn_dom.propertyMap[property] || property;
         propertyShort = `__${propertyShort}`;
-        let cls = `${propertyShort}-${JSON.stringify(fastn_dom.class_count)}`;
+        let cls = `${propertyShort}-${fastn_dom.class_count}`;
         if (!!className) {
            cls = className;
         } else {
@@ -1810,7 +1810,7 @@ class Node2 {
         const maskDarkImageString = maskDarkImageValues.join(", ");
 
         if(maskLightImageString === maskDarkImageString) {
-            this.attachCss(propertyWithPrefix, maskLightImageString, false);
+            this.attachCss(propertyWithPrefix, maskLightImageString, true);
         } else {
             let lightClass = this.attachCss(propertyWithPrefix, maskLightImageString, true);
             this.attachCss(propertyWithPrefix, maskDarkImageString, true, `body.dark .${lightClass}`);
@@ -1847,23 +1847,23 @@ class Node2 {
         this.attachMaskSizeCss(value, vendorPrefix);
         const maskRepeatValue = fastn_utils.getStaticValue(value.get("repeat"));
         if(fastn_utils.isNull(maskRepeatValue)) {
-            this.attachCss("mask-repeat", maskRepeatValue);
-            this.attachCss("-webkit-mask-repeat", maskRepeatValue);
+            this.attachCss("mask-repeat", maskRepeatValue, true);
+            this.attachCss("-webkit-mask-repeat", maskRepeatValue, true);
         } else {
-            this.attachCss("mask-repeat", maskRepeatValue);
-            this.attachCss("-webkit-mask-repeat", maskRepeatValue);
+            this.attachCss("mask-repeat", maskRepeatValue, true);
+            this.attachCss("-webkit-mask-repeat", maskRepeatValue, true);
         }
         const maskPositionValue = fastn_utils.getStaticValue(value.get("position"));
         if(fastn_utils.isNull(maskPositionValue)) {
-            this.attachCss("mask-position", maskPositionValue);
-            this.attachCss("-webkit-mask-position", maskPositionValue);
+            this.attachCss("mask-position", maskPositionValue, true);
+            this.attachCss("-webkit-mask-position", maskPositionValue, true);
         } else {
-            this.attachCss("mask-position", maskPositionValue);
-            this.attachCss("-webkit-mask-position", maskPositionValue);
+            this.attachCss("mask-position", maskPositionValue, true);
+            this.attachCss("-webkit-mask-position", maskPositionValue, true);
         }
     }
     attachExternalCss(css) {
-        if (hydrating) {
+        if (hydrating || rerender) {
             let css_tag = document.createElement('link');
             css_tag.rel = 'stylesheet';
             css_tag.type = 'text/css';
@@ -1877,7 +1877,7 @@ class Node2 {
         }
     }
     attachExternalJs(js) {
-        if (hydrating) {
+        if (hydrating || rerender) {
             let js_tag = document.createElement('script');
             js_tag.src = js;
 
