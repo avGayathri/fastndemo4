@@ -23,9 +23,9 @@ heading: Login
 cta-button: LOGIN
 link-1: demo
 cta-text-1: Forgot Password?
-cta-link-2: https://fastnui.trizwit.com/
+cta-link-2: regform
 cta-text-2: Register
-cta-link-3: https://fastnui.trizwit.com/
+cta-link-3: regform
 
 -- end: ftd.row
 

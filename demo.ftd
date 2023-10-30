@@ -1,9 +1,13 @@
 -- import: fastnui.trizwit.com/UI-Components/Hero/hero-2 as trizwit
 
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.image: $assets.files.assets.bg5.jpg
 
 -- lib.header:
 logo: $assets.files.assets.logo2.jpg
-logo-name: Percepta
+logo-name: Palladium
 cta-text-1: Home
 cta-text-2: About
 cta-text-3: Projects
@@ -15,9 +19,9 @@ cta-link-3: https://fastnui.trizwit.com/
 
 
 -- lib.biolink-page:
-propic: $assets.files.assets.propic.jpg
-name: GAYATHRI A V
-about: add your about
+propic: $assets.files.assets.propic2.jpg
+name: OLIVE WATSON
+about: Capturing moments, telling stories
 cta-button-1: Facebook
 cta-button-2: Twitter
 cta-button-3: Github
@@ -26,6 +30,19 @@ cta-link-1: https://fastnui.trizwit.com/
 cta-link-2: https://fastnui.trizwit.com/
 cta-link-3: https://fastnui.trizwit.com/
 cta-link-4: https://fastnui.trizwit.com/
+
+
+-- lib.gallery:
+photo-1: $assets.files.photos.photo3.jpg
+photo-2: $assets.files.photos.photo4.jpg
+photo-3: $assets.files.photos.photo1.jpg
+photo-4: $assets.files.photos.photo8.jpg
+photo-5: $assets.files.photos.photo5.jpg
+photo-6: $assets.files.photos.photo2.jpg
+photo-7: $assets.files.photos.photo9.jpg
+photo-8: $assets.files.photos.photo6.jpg
+photo-9: $assets.files.photos.photo7.jpg
+
 
 
 
@@ -39,7 +56,7 @@ cta-link-4: https://fastnui.trizwit.com/
 ;;"We want to build technology that everybody loves using, and that affects everyone. We want to create beautiful, intuitive services and technologies that are so incredibly useful that people use them twice a day. Like they use a toothbrush. There aren't that many things people use twice a day."
 
 -- lib.desk-footer:
-copyright: Copyright © 2023 - Percepta
+copyright: Copyright © 2023 - Palladium
 logo-1: $assets.files.assets.instagram.png
 logo-2: $assets.files.assets.linkedin.png
 logo-3: $assets.files.assets.facebook.png
@@ -50,3 +67,6 @@ cta-link-2: https://fastnui.trizwit.com/
 cta-link-3: https://fastnui.trizwit.com/
 cta-link-4: https://fastnui.trizwit.com/
 cta-link-5: https://fastnui.trizwit.com/
+
+
+-- end: ftd.column
