@@ -1452,3 +1452,226 @@ link: $mob-regform.link-1
 
 -- regform:
 link-1: https://fastnui.trizwit.com/
+
+
+
+
+
+
+
+
+
+
+
+-- component gallery:
+ftd.image-src photo-1:
+ftd.image-src photo-2:
+ftd.image-src photo-3:
+ftd.image-src photo-4:
+ftd.image-src photo-5:
+ftd.image-src photo-6:
+ftd.image-src photo-7:
+ftd.image-src photo-8:
+ftd.image-src photo-9:
+
+
+
+-- ftd.column:
+width.fixed.vw: 47
+height.fixed.vw: 80
+align-self: center
+
+
+
+;;row 1
+-- ftd.row:
+width: auto
+height: auto
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+
+-- ftd.image:
+src: $gallery.photo-1
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+
+-- ftd.image:
+src: $gallery.photo-2
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery.photo-3
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 18
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+;;row 2
+-- ftd.row:
+width: auto
+height: auto
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+
+-- ftd.image:
+src: $gallery.photo-4
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 18
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+
+
+-- ftd.text: GALLERY
+css: [ $assets.files.style.gallery.css]
+classes: animate-character
+align-self: center
+margin-left.px: 70
+
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery.photo-5
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 18
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery.photo-6
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+;; row 3
+-- ftd.row:
+width: auto
+height: auto
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery.photo-7
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery.photo-8
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+
+-- ftd.image:
+src: $gallery.photo-9
+css: [ $assets.files.style.gallery.css]
+classes: zoom
+width.fixed.vw: 18
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+
+-- end: ftd.column
+
+-- end: gallery
+
+
+
