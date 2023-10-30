@@ -17,6 +17,23 @@ background.image: $assets.files.assets.bg4.jpeg
 ;;background.solid: white
 padding.px: 70
 
+-- ftd.column:
+background.solid: red
+align-content: left
+width.fixed.percent: 30
+height.fixed.percent: 60
+margin-right.px: 0
+
+-- lib.advertisement:
+add1: $assets.files.assets.add1.jpg
+add2: $assets.files.assets.add2.jpg
+add3: $assets.files.assets.add3.jpg
+link-1: https://fastnui.trizwit.com/
+link-2: https://fastnui.trizwit.com/
+link-3: https://fastnui.trizwit.com/
+
+-- end: ftd.column
+
 
 -- lib.loginpg: 
 heading: Login

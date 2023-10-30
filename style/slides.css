@@ -1,0 +1,37 @@
+.slideshow-container {
+    width: 300px;
+    overflow: hidden;   
+}
+
+.slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+     
+}
+
+.slide {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #fafbfc;
+    color: #fff;
+    animation: changeSlide 25s infinite;
+}
+
+
+@keyframes changeSlide {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
