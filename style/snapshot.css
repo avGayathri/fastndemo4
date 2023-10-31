@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+.animate-character{
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 10px 0;
+  }
+
+  .border {
+    border-left-color: rgb(240, 90, 9);
+    border-right-color: rgb(131, 32, 8);
+    border-top-color: orangered;
+    border-bottom-color: orange;
+  }
+
+  .zoom {
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+  }
