@@ -63,6 +63,12 @@ link: $advertisement.link-3
 
 -- end: advertisement
 
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+margin-top.px: 150
+
 -- advertisement:
 ad1: $assets.files.assets.add1.jpg
 ad2: $assets.files.assets.add2.jpg
@@ -70,3 +76,5 @@ ad3: $assets.files.assets.add3.jpg
 link-1: https://fastnui.trizwit.com/
 link-2: https://fastnui.trizwit.com/
 link-3: https://fastnui.trizwit.com/
+
+-- end: ftd.column

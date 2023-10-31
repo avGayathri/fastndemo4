@@ -331,21 +331,24 @@ padding-bottom: 3px;
 </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column slideshow-container"><div data-id="4" class="ft_row slides"><div data-id="5" class="ft_row slide __w-3 __h-4"><img data-id="6" src="-/avgayathri.github.io/fastndemo4/assets/add1.jpg" class="__w-5 __h-6"></img></div><div data-id="7" class="ft_row slide __w-7 __h-8"><img data-id="8" src="-/avgayathri.github.io/fastndemo4/assets/add2.jpg" class="__w-9 __h-10"></img></div><div data-id="9" class="ft_row slide __w-11 __h-12"><img data-id="10" src="-/avgayathri.github.io/fastndemo4/assets/add3.jpg" class="__w-13 __h-14"></img></div></div></div></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column __w-3 __h-4 __mt-5"><div data-id="4" class="ft_column slideshow-container"><div data-id="5" class="ft_row slides"><div data-id="6" class="ft_row slide __w-6 __h-7"><img data-id="7" src="-/avgayathri.github.io/fastndemo4/assets/add1.jpg" class="__w-8 __h-9"></img></div><div data-id="8" class="ft_row slide __w-10 __h-11"><img data-id="9" src="-/avgayathri.github.io/fastndemo4/assets/add2.jpg" class="__w-12 __h-13"></img></div><div data-id="10" class="ft_row slide __w-14 __h-15"><img data-id="11" src="-/avgayathri.github.io/fastndemo4/assets/add3.jpg" class="__w-16 __h-17"></img></div></div></div></div></div></body><style id="styles">
 .__w-1 { width: 100%; }
 .__h-2 { height: 100%; }
-.__w-3 { width: 40vw; }
-.__h-4 { height: 20vw; }
-.__w-5 { width: 40vw; }
-.__h-6 { height: 20vw; }
-.__w-7 { width: 40vw; }
-.__h-8 { height: 20vw; }
-.__w-9 { width: 40vw; }
-.__h-10 { height: 20vw; }
-.__w-11 { width: 40vw; }
-.__h-12 { height: 20vw; }
-.__w-13 { width: 40vw; }
-.__h-14 { height: 20vw; }
+.__w-3 { width: 100%; }
+.__h-4 { height: 100%; }
+.__mt-5 { margin-top: 150px; }
+.__w-6 { width: 40vw; }
+.__h-7 { height: 20vw; }
+.__w-8 { width: 40vw; }
+.__h-9 { height: 20vw; }
+.__w-10 { width: 40vw; }
+.__h-11 { height: 20vw; }
+.__w-12 { width: 40vw; }
+.__h-13 { height: 20vw; }
+.__w-14 { width: 40vw; }
+.__h-15 { height: 20vw; }
+.__w-16 { width: 40vw; }
+.__h-17 { height: 20vw; }
 </style>
 <script>
 (function() {
@@ -353,7 +356,12 @@ let main = function (parent) {
 let __fastn_super_package_name__ = __fastn_package_name__;
 __fastn_package_name__ = "avgayathri_github_io_fastndemo4";
 try {
-let parenti0 = avgayathri_github_io_fastndemo4_adv___advertisement(parent, inherited, {
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(150), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = avgayathri_github_io_fastndemo4_adv___advertisement(root, inherited, {
 ad1: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("add1").get("jpg"),
 ad2: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("add2").get("jpg"),
 ad3: global.avgayathri_github_io_fastndemo4_assets__files.get("assets").get("add3").get("jpg"),
@@ -361,6 +369,8 @@ link_1: "https://fastnui.trizwit.com/",
 link_2: "https://fastnui.trizwit.com/",
 link_3: "https://fastnui.trizwit.com/"
 });
+}
+]), inherited);
 } finally {
 __fastn_package_name__ = __fastn_super_package_name__;
 }
