@@ -36,7 +36,7 @@ border-width.px: 3
 
 
 -- ftd.image: $snapshot.image1
-margin.px: 4
+margin.px: 5
 width.fixed.px: 130
 height.fixed.px: 130
 border-radius.percent: 50
@@ -57,7 +57,7 @@ border-width.px: 3
 margin-top.px: 40
 
 -- ftd.image: $snapshot.image2
-margin.px: 4
+margin.px: 5
 width.fixed.px: 130
 height.fixed.px: 130
 border-radius.percent: 50
@@ -80,7 +80,7 @@ border-width.px: 3
 
 
 -- ftd.image: $snapshot.image3
-margin.px: 4
+margin.px: 5
 width.fixed.px: 130
 height.fixed.px: 130
 border-radius.percent: 50
