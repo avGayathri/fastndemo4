@@ -4,10 +4,10 @@
 }
 
 .slides {
-    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex; */
+    overflow: hidden;
      
 }
 
@@ -17,7 +17,7 @@
     padding: 20px;
     background-color: #fafbfc;
     color: #fff;
-    animation: changeSlide 25s infinite;
+    animation: changeSlide 30s infinite;
 }
 
 
