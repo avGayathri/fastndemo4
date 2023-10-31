@@ -1,0 +1,72 @@
+-- component advertisement:
+ftd.image-src ad1:
+ftd.image-src ad2:
+ftd.image-src ad3:
+string link-1:
+string link-2:
+string link-3:
+
+-- ftd.column:
+classes: slideshow-container
+css: [ $assets.files.style.slides.css]
+
+-- ftd.row:
+classes: slides
+css: [ $assets.files.style.slides.css]
+
+-- ftd.row:
+classes: slide
+css: [ $assets.files.style.slides.css]
+width.fixed.vw: 40
+height.fixed.vw: 20
+
+-- ftd.image:
+src: $advertisement.ad1
+width.fixed.vw: 40
+height.fixed.vw: 20
+link: $advertisement.link-1
+
+-- end: ftd.row
+
+-- ftd.row:
+classes: slide
+css: [ $assets.files.style.slides.css]
+width.fixed.vw: 40
+height.fixed.vw: 20
+
+-- ftd.image:
+src: $advertisement.ad2
+width.fixed.vw: 40
+height.fixed.vw: 20
+link: $advertisement.link-2
+
+-- end: ftd.row
+
+-- ftd.row:
+classes: slide
+css: [ $assets.files.style.slides.css]
+width.fixed.vw: 40
+height.fixed.vw: 20
+
+
+-- ftd.image:
+src: $advertisement.ad3
+width.fixed.vw: 40
+height.fixed.vw: 20
+link: $advertisement.link-3
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: advertisement
+
+-- advertisement:
+ad1: $assets.files.assets.add1.jpg
+ad2: $assets.files.assets.add2.jpg
+ad3: $assets.files.assets.add3.jpg
+link-1: https://fastnui.trizwit.com/
+link-2: https://fastnui.trizwit.com/
+link-3: https://fastnui.trizwit.com/
