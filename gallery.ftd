@@ -1,0 +1,18 @@
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: black
+align-self: center
+
+-- lib.gallery:
+photo-1: $assets.files.photos.photo3.jpg
+photo-2: $assets.files.photos.photo4.jpg
+photo-3: $assets.files.photos.photo1.jpg
+photo-4: $assets.files.photos.photo8.jpg
+photo-5: $assets.files.photos.photo5.jpg
+photo-6: $assets.files.photos.photo2.jpg
+photo-7: $assets.files.photos.photo9.jpg
+photo-8: $assets.files.photos.photo6.jpg
+photo-9: $assets.files.photos.photo7.jpg
+
+-- end: ftd.column

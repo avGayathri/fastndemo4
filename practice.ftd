@@ -102,6 +102,6 @@ link: $snapshot.cta-link-3
 image1: $assets.files.photos.photo1.jpg
 image2: $assets.files.photos.photo2.jpg
 image3: $assets.files.photos.photo3.jpg
-cta-link-1: https://fastnui.trizwit.com/
-cta-link-2: https://fastnui.trizwit.com/
-cta-link-3: https://fastnui.trizwit.com/
+cta-link-1: gallery
+cta-link-2: gallery
+cta-link-3: gallery
