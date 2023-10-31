@@ -1,6 +1,7 @@
 .slideshow-container {
     width: 300px;
-    overflow: hidden;    
+    overflow: hidden; 
+    margin: 0 auto;  
 }
 
 .slides {
@@ -17,7 +18,7 @@
     padding: 20px;
     background-color: #fafbfc;
     color: #fff;
-    animation: changeSlide 30s infinite;
+    animation: changeSlide 25s infinite;
 }
 
 
